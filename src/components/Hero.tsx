@@ -3,9 +3,16 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-background via-accent to-muted overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5"></div>
+    <section className="relative min-h-screen overflow-hidden">
+      {/* Background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url('/lovable-uploads/e03a1aed-51db-4cb8-a4d7-f3a62bd3bcc0.png')`
+        }}
+      ></div>
+      {/* Background overlay for readability */}
+      <div className="absolute inset-0 bg-background/80"></div>
       <div className="absolute top-20 right-20 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-20 w-48 h-48 bg-secondary/10 rounded-full blur-3xl"></div>
       
