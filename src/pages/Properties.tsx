@@ -10,10 +10,10 @@ const Properties = () => {
     {
       id: 1,
       title: "Luxury Downtown Apartment Complex",
-      location: "Manhattan, New York",
-      image: "/src/assets/property-1.jpg",
-      totalValue: "$2,850,000",
-      minInvestment: "$1,000",
+      location: "Gurgaon, Delhi NCR",
+      image: "/src/assets/building1.jpeg",
+      totalValue: "₹2,850,000",
+      minInvestment: "₹1,000",
       expectedReturn: "8.5%",
       investors: 234,
       status: "Active",
@@ -22,10 +22,10 @@ const Properties = () => {
     {
       id: 2,
       title: "Modern Office Building",
-      location: "Austin, Texas",
-      image: "/src/assets/property-2.jpg",
-      totalValue: "$4,200,000",
-      minInvestment: "$2,500",
+      location: "Gurgaon, Delhi NCR",
+      image: "/src/assets/building2.jpeg",
+      totalValue: "₹4,200,000",
+      minInvestment: "₹2,500",
       expectedReturn: "7.2%",
       investors: 187,
       status: "Active",
@@ -34,51 +34,15 @@ const Properties = () => {
     {
       id: 3,
       title: "Suburban Retail Plaza",
-      location: "Phoenix, Arizona",
-      image: "/src/assets/property-3.jpg",
-      totalValue: "$1,650,000",
-      minInvestment: "$500",
+      location: "Gurgaon , NCR",
+      image: "/src/assets/building3.jpeg",
+      totalValue: "₹1,650,000",
+      minInvestment: "500",
       expectedReturn: "9.1%",
       investors: 298,
       status: "Fully Funded",
       availability: "Waitlist Only"
-    },
-    {
-      id: 4,
-      title: "Waterfront Condominiums",
-      location: "Miami, Florida",
-      image: "/src/assets/property-1.jpg",
-      totalValue: "$5,800,000",
-      minInvestment: "$5,000",
-      expectedReturn: "6.8%",
-      investors: 156,
-      status: "Coming Soon",
-      availability: "Pre-registration Open"
-    },
-    {
-      id: 5,
-      title: "Tech Campus Hub",
-      location: "San Francisco, California",
-      image: "/src/assets/property-2.jpg",
-      totalValue: "$8,900,000",
-      minInvestment: "$10,000",
-      expectedReturn: "7.9%",
-      investors: 89,
-      status: "Active",
-      availability: "28% Available"
-    },
-    {
-      id: 6,
-      title: "Historic Renovation Project",
-      location: "Boston, Massachusetts",
-      image: "/src/assets/property-3.jpg",
-      totalValue: "$3,400,000",
-      minInvestment: "$2,000",
-      expectedReturn: "8.8%",
-      investors: 201,
-      status: "Active",
-      availability: "71% Available"
-    }
+     }
   ];
 
   const getStatusBadge = (status: string) => {
@@ -101,13 +65,16 @@ const Properties = () => {
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-primary">
         <div className="container mx-auto px-6">
-          <div className="text-center text-white">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Investment Properties
-            </h1>
-            <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
-              Discover premium real estate investment opportunities with verified returns and professional management.
-            </p>
+          <div className="text-center text-black">
+           
+
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Investment</span> Properties
+          </h2>
+            
+            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+            Discover premium real estate investment opportunities with verified returns and professional management.
+              </p>
           </div>
         </div>
       </section>

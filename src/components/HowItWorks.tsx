@@ -11,19 +11,19 @@ const HowItWorks = () => {
     {
       icon: CreditCard,
       title: "Invest Your Amount",
-      description: "Start with as little as ₹7,500. Purchase fractional shares of properties that match your investment goals.",
+      description: "Start small and become a co-owner in premium properties that align with your investment goals. Build your real estate portfolio without the need for large capital.",
       color: "secondary"
     },
     {
       icon: TrendingUp,
       title: "Earn Annual Returns",
-      description: "Receive your share of rental income and property appreciation directly to your account every year.",
+      description: "Receive monthly rental income as well as your property value will appreciate over time. Watch your investment grow while enjoying consistent passive earnings.",
       color: "primary"
     },
     {
       icon: Banknote,
       title: "Exit After 3 Years",
-      description: "Sell your shares back to us or transfer to other investors after the minimum 3-year holding period.",
+      description: "Sell your property back to us and Enjoy your returns. You can re-invest again with us to enjoy more returns on your capital.",
       color: "secondary"
     }
   ];
@@ -94,7 +94,7 @@ const HowItWorks = () => {
                   <span className="text-secondary font-bold">Y2</span>
                 </div>
                 <div>
-                  <p className="font-semibold">Year 2: Steady Returns</p>
+                  <p className="font-semibold">Year 2: Rental Earning From Day One</p>
                   <p className="text-muted-foreground">Consistent rental income and property appreciation</p>
                 </div>
               </div>
@@ -105,7 +105,7 @@ const HowItWorks = () => {
                 </div>
                 <div>
                   <p className="font-semibold">Year 3+: Exit Option</p>
-                  <p className="text-muted-foreground">Sell your shares or continue earning returns</p>
+                  <p className="text-muted-foreground">Guaranted Exit Through Groupdealz</p>
                 </div>
               </div>
             </div>
@@ -120,13 +120,25 @@ const HowItWorks = () => {
                   <div className="space-y-4">
                     <div className="bg-muted rounded-lg p-4">
                       <p className="text-sm text-muted-foreground">Initial Investment</p>
-                      <p className="text-2xl font-bold">₹75,000</p>
+                      <p className="text-2xl font-bold">10 Lakh </p>
                     </div>
-                    <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg p-4">
+                    <div className="bg-muted rounded-lg p-4">
+                      <p className="text-sm text-muted-foreground">Annual Rental Income</p>
+                      <p className="text-2xl font-bold">8%-9%</p>
+                    </div>
+                    <div className="bg-muted rounded-lg p-4">
+                      <p className="text-sm text-muted-foreground">Annual Property Capital Appriciation</p>
+                      <p className="text-2xl font-bold">14%-16%</p>
+                    </div>
+                    <div className="bg-muted rounded-lg p-4">
+                      <p className="text-sm text-muted-foreground">Annual Property maintainence Fee</p>
+                      <p className="text-2xl font-bold">4%-5%</p>
+                    </div>
+                    {/* <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg p-4">
                       <p className="text-sm text-muted-foreground">After 3 Years</p>
                       <p className="text-3xl font-bold text-secondary">₹1,03,125</p>
                       <p className="text-sm text-secondary font-semibold">+37.5% Total Return</p>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

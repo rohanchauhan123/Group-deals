@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -8,14 +9,14 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="mb-6">
-              <img 
-                src="/lovable-uploads/a001c620-565a-4b42-b7f2-1fcfc76a23fc.png" 
-                alt="GroupDealz Logo" 
+              <img
+                src="/lovable-uploads/GroupDealz.png"
+                alt="GroupDealz Logo"
                 className="h-10 w-auto brightness-0 invert"
               />
             </div>
             <p className="text-white/75 mb-6 leading-relaxed">
-              Making real estate investment accessible to everyone through fractional ownership and professional management.
+              Making real estate investment accessible to everyone through co owning Luxury properties and professional management.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
@@ -32,58 +33,57 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          
+
           {/* Quick Links */}
           <div>
             <h3 className="font-semibold text-lg mb-6">Quick Links</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-white/75 hover:text-primary transition-colors">How It Works</a></li>
-              <li><a href="#" className="text-white/75 hover:text-primary transition-colors">Properties</a></li>
-              <li><a href="#" className="text-white/75 hover:text-primary transition-colors">About Us</a></li>
+              <li><Link to="/how-it-works" className="text-white/75 hover:text-primary transition-colors">How It Works</Link></li>
+              
+              <li><Link to="/about" className="text-white/75 hover:text-primary transition-colors">About Us</Link></li>
               <li><a href="#" className="text-white/75 hover:text-primary transition-colors">Blog</a></li>
-              <li><a href="#" className="text-white/75 hover:text-primary transition-colors">FAQs</a></li>
+              <li><a href="/how-it-works" className="text-white/75 hover:text-primary transition-colors">FAQs</a></li>
             </ul>
           </div>
-          
+
           {/* Legal */}
           <div>
             <h3 className="font-semibold text-lg mb-6">Legal</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-white/75 hover:text-primary transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="text-white/75 hover:text-primary transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-white/75 hover:text-primary transition-colors">Risk Disclosure</a></li>
-              <li><a href="#" className="text-white/75 hover:text-primary transition-colors">Regulatory Info</a></li>
-              <li><a href="#" className="text-white/75 hover:text-primary transition-colors">Contact Us</a></li>
+              <li><a href="/terms" className="text-white/75 hover:text-primary transition-colors">Terms of Service</a></li>
+              <li><Link to="/privacy" className="text-white/75 hover:text-primary transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/contact" className="text-white/75 hover:text-primary transition-colors">Contact Us</Link></li>
             </ul>
           </div>
-          
+
           {/* Contact */}
           <div>
             <h3 className="font-semibold text-lg mb-6">Contact</h3>
             <div className="space-y-4">
               <div>
                 <p className="text-white/75">Email:</p>
-                <p className="text-primary">invest@groupdealz.com</p>
+                <p className="text-primary">info@groupdealz.com</p>
               </div>
               <div>
                 <p className="text-white/75">Phone:</p>
-                <p className="text-primary">1-800-GROUP-DEALZ</p>
+                <p className="text-primary">+91 9211652088</p>
               </div>
               <div>
                 <p className="text-white/75">Address:</p>
-                <p className="text-white/75">123 Investment Street<br />New York, NY 10001</p>
+                <p className="text-white/75">Ist Floor, Plus Office, Landmark Cyber Park, Ramgarh, Sector 67, Gurugram, Haryana 122018</p>
               </div>
             </div>
           </div>
         </div>
-        
+
+        {/* Footer Bottom */}
         <div className="border-t border-white/20 mt-12 pt-8 text-center">
           <p className="text-white/75">
-            © 2024 GroupDealz. All rights reserved. | Securities offered through licensed broker-dealers.
+            © 2025 GroupDealz. All rights reserved. 
           </p>
-          <p className="text-white/50 text-sm mt-2">
+          {/* <p className="text-white/50 text-sm mt-2">
             Real estate investments involve risk including loss of principal. Past performance does not guarantee future results.
-          </p>
+          </p> */}
         </div>
       </div>
     </footer>
