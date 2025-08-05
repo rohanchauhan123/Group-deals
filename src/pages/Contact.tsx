@@ -169,22 +169,39 @@ const Contact = () => {
               </p>
               
               <Card className="p-8 shadow-xl border-0 bg-white">
-                <form className="space-y-6">
+                <form
+                  action="https://formsubmit.co/0debb77ee24630a8b8f928929ed0e42b"
+                  method="POST"
+                  className="space-y-6"
+                >
+                  {/* Optional: Disable CAPTCHA */}
+                  <input type="hidden" name="_captcha" value="false" />
+                  
+                  {/* Optional: Custom Subject */}
+                  <input type="hidden" name="_subject" value="New Lead from Website" />
+
+                  {/* Optional: Redirect after submit */}
+                  <input type="hidden" name="_next" value="https://www.groupdealz.in/" />
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="firstName" className="text-slate-700 font-medium">First Name</Label>
                       <Input 
                         id="firstName" 
+                        name="First Name"    // 🔥 name added
                         placeholder="John" 
                         className="mt-2 border-slate-200 focus:border-primary focus:ring-primary/20 h-12"
+                        required
                       />
                     </div>
                     <div>
                       <Label htmlFor="lastName" className="text-slate-700 font-medium">Last Name</Label>
                       <Input 
                         id="lastName" 
+                        name="Last Name"     // 🔥 name added
                         placeholder="Doe" 
                         className="mt-2 border-slate-200 focus:border-primary focus:ring-primary/20 h-12"
+                        required
                       />
                     </div>
                   </div>
@@ -194,8 +211,10 @@ const Contact = () => {
                     <Input 
                       id="email" 
                       type="email" 
+                      name="Email"          // 🔥 name added
                       placeholder="john@example.com" 
                       className="mt-2 border-slate-200 focus:border-primary focus:ring-primary/20 h-12"
+                      required
                     />
                   </div>
                   
@@ -204,6 +223,7 @@ const Contact = () => {
                     <Input 
                       id="phone" 
                       type="tel" 
+                      name="Phone"          // 🔥 name added
                       placeholder="+91 98765 43210" 
                       className="mt-2 border-slate-200 focus:border-primary focus:ring-primary/20 h-12"
                     />
@@ -213,6 +233,7 @@ const Contact = () => {
                     <Label htmlFor="subject" className="text-slate-700 font-medium">Subject</Label>
                     <Input 
                       id="subject" 
+                      name="Subject"        // 🔥 name added
                       placeholder="Investment Inquiry" 
                       className="mt-2 border-slate-200 focus:border-primary focus:ring-primary/20 h-12"
                     />
@@ -222,6 +243,7 @@ const Contact = () => {
                     <Label htmlFor="message" className="text-slate-700 font-medium">Message</Label>
                     <Textarea 
                       id="message" 
+                      name="Message"        // 🔥 name added
                       placeholder="Tell us about your investment goals and any questions you have..."
                       className="min-h-32 mt-2 border-slate-200 focus:border-primary focus:ring-primary/20 resize-none"
                     />
@@ -232,6 +254,7 @@ const Contact = () => {
                     Send Message
                   </Button>
                 </form>
+
               </Card>
             </div>
 
