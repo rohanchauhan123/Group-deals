@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Helmet } from 'react-helmet-async'
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import HowItWorks from "@/components/HowItWorks";
@@ -31,7 +32,42 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <>
+          
+  <Helmet>
+  <title>GroupDealz - Real Estate Investment in Gurgaon</title>
+  <meta name="title" content="GroupDealz - Real Estate Investment in Gurgaon" />
+  <meta
+    name="description"
+    content="Find the Best Real Estate Investment in Gurgaon. See top properties, simple tips, and smart ideas to help you earn more from your investment."
+  />
+  <meta
+    name="keywords"
+    content="GroupDealz, Real Estate Investment in Gurgaon, Top Real Estate Investment in Gurgaon, Best Real Estate Investment, Real Estate Investment, Gurgaon Real Estate Investment"
+  />
+  <link rel="canonical" href="https://www.groupdealz.in/" />
+
+  <meta name="DC.Title" content="GroupDealz - Real Estate Investment in Gurgaon" />
+  <meta
+    name="DC.Subject"
+    content="Find the Best Real Estate Investment in Gurgaon. See top properties, simple tips, and smart ideas to help you earn more from your investment."
+  />
+
+  <meta property="og:title" content="GroupDealz - Real Estate Investment in Gurgaon" />
+  <meta
+    property="og:description"
+    content="Find the Best Real Estate Investment in Gurgaon. See top properties, simple tips, and smart ideas to help you earn more from your investment."
+  />
+
+  <meta name="language" content="en-us" />
+  <meta name="coverage" content="Global" />
+  <meta name="robots" content="INDEX,FOLLOW" />
+  <meta name="GOOGLEBOT" content="INDEX, FOLLOW" />
+  <meta name="doc-type" content="Webpage" />
+  <meta name="revisit-after" content="7 days" />
+</Helmet>
+
+      <div className="min-h-screen">
       <Navbar />
       <Hero />
       <HowItWorks />
@@ -40,6 +76,7 @@ const Index = () => {
       <CTA />
       <Footer />
     </div>
+    </>
   );
 };
 
