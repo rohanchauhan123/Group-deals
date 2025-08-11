@@ -58,7 +58,7 @@ const Index = () => {
     property="og:description"
     content="Find the Best Real Estate Investment in Gurgaon. See top properties, simple tips, and smart ideas to help you earn more from your investment."
   />
-
+  <meta name="google-site-verification" content="WXPsCSPr5ZvAns8CYksYVhYgXFZnnTwD-e8C_lFACQA" />
   <meta name="language" content="en-us" />
   <meta name="coverage" content="Global" />
   <meta name="robots" content="INDEX,FOLLOW" />
