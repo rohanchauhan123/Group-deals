@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { UserPlus, Search, DollarSign, TrendingUp, Shield, Clock, Users, BarChart, ArrowRight, PieChart, Building, Wallet, Target, CheckCircle, Star, Globe, Award, Zap, ChevronDown, ChevronUp, Phone, FileText, MapPin, Calendar } from "lucide-react";
-
+import { Helmet } from 'react-helmet-async';
 const HowItWorksPage = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
@@ -12,7 +12,7 @@ const HowItWorksPage = () => {
     {
       icon: UserPlus,
       title: "Create Your Account",
-      description: "Sign up in minutes with basic details and complete our simple KYC process.",
+      description: " Sign up in minutes  with basic details and complete our simple KYC process.",
       details: ["Hassle-free onboarding", "Investor dashboard access", "Secure, RERA-compliant platform"],
       time: "5 Minutes"
     },
@@ -84,6 +84,10 @@ const HowItWorksPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <Helmet>
+      <title>How It works | GroupDealz</title>
+      <meta name="description" content="Learn more about GroupDealz and our mission to democratize real estate investment." />
+    </Helmet>
       <Navbar />
       
       {/* Hero Section */}
