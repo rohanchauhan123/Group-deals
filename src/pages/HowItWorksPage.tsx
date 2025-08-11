@@ -84,10 +84,36 @@ const HowItWorksPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
-    <Helmet>
-      <title>How It works | GroupDealz</title>
-      <meta name="description" content="Learn more about GroupDealz and our mission to democratize real estate investment." />
-    </Helmet>
+ <Helmet>
+  <title>GroupDealz - How It Works</title>
+  <meta name="title" content="GroupDealz - How It Works" />
+  <meta
+    name="description"
+    content="Experience premium real estate ownership—made simple, secure, and accessible. GroupDealz empowers you to co-invest in RERA-registered, high-value properties starting from just ₹10L."
+  />
+  <meta name="keywords" content="How It Works" />
+  <link rel="canonical" href="https://www.groupdealz.in/how-it-works" />
+
+  <meta name="DC.Title" content="GroupDealz - How It Works" />
+  <meta
+    name="DC.Subject"
+    content="Experience premium real estate ownership—made simple, secure, and accessible. GroupDealz empowers you to co-invest in RERA-registered, high-value properties starting from just ₹10L."
+  />
+
+  <meta property="og:title" content="GroupDealz - How It Works" />
+  <meta
+    property="og:description"
+    content="Experience premium real estate ownership—made simple, secure, and accessible. GroupDealz empowers you to co-invest in RERA-registered, high-value properties starting from just ₹10L."
+  />
+
+  <meta name="language" content="en-us" />
+  <meta name="coverage" content="Global" />
+  <meta name="robots" content="INDEX,FOLLOW" />
+  <meta name="GOOGLEBOT" content="INDEX, FOLLOW" />
+  <meta name="doc-type" content="Webpage" />
+  <meta name="revisit-after" content="7 days" />
+</Helmet>
+
       <Navbar />
       
       {/* Hero Section */}
