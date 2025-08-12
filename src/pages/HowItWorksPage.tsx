@@ -85,25 +85,25 @@ const HowItWorksPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
  <Helmet>
-  <title>GroupDealz - How It Works</title>
-  <meta name="title" content="GroupDealz - How It Works" />
+  <title>How Real Estate Investment Works for Beginners</title>
+  <meta name="title" content="How Real Estate Investment Works for Beginners" />
   <meta
     name="description"
-    content="Experience premium real estate ownership—made simple, secure, and accessible. GroupDealz empowers you to co-invest in RERA-registered, high-value properties starting from just ₹10L."
+    content="Learn how fractional real estate investing works in Gurgaon. Start with ₹10L, earn rental income from Day 1, and enjoy high ROI with flexible exit options."
   />
-  <meta name="keywords" content="How It Works" />
+  <meta name="keywords" content="Invest smart in real estate in Gurgaon with GroupDealz. Co-own RERA-registered properties from ₹10L. Earn rental income & get flexible exit options." />
   <link rel="canonical" href="https://www.groupdealz.in/how-it-works" />
 
-  <meta name="DC.Title" content="GroupDealz - How It Works" />
+  <meta name="DC.Title" content="How Real Estate Investment Works for Beginners" />
   <meta
     name="DC.Subject"
-    content="Experience premium real estate ownership—made simple, secure, and accessible. GroupDealz empowers you to co-invest in RERA-registered, high-value properties starting from just ₹10L."
+    content="Learn how fractional real estate investing works in Gurgaon. Start with ₹10L, earn rental income from Day 1, and enjoy high ROI with flexible exit options."
   />
 
-  <meta property="og:title" content="GroupDealz - How It Works" />
+  <meta property="og:title" content="How Real Estate Investment Works for Beginners" />
   <meta
     property="og:description"
-    content="Experience premium real estate ownership—made simple, secure, and accessible. GroupDealz empowers you to co-invest in RERA-registered, high-value properties starting from just ₹10L."
+    content="Learn how fractional real estate investing works in Gurgaon. Start with ₹10L, earn rental income from Day 1, and enjoy high ROI with flexible exit options."
   />
 
   <meta name="language" content="en-us" />

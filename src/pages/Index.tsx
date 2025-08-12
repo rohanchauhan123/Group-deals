@@ -35,28 +35,28 @@ const Index = () => {
     <>
           
   <Helmet>
-  <title>GroupDealz - Real Estate Investment in Gurgaon</title>
-  <meta name="title" content="GroupDealz - Real Estate Investment in Gurgaon" />
+  <title>Real Estate Investment & Top Property in Gurgaon</title>
+  <meta name="title" content="Real Estate Investment & Top Property in Gurgaon" />
   <meta
     name="description"
-    content="Find the Best Real Estate Investment in Gurgaon. See top properties, simple tips, and smart ideas to help you earn more from your investment."
+    content="Invest smart in real estate in Gurgaon with GroupDealz. Co-own RERA-registered properties from ₹10L. Earn rental income & get flexible exit options."
   />
   <meta
     name="keywords"
-    content="GroupDealz, Real Estate Investment in Gurgaon, Top Real Estate Investment in Gurgaon, Best Real Estate Investment, Real Estate Investment, Gurgaon Real Estate Investment"
+    content="Real Estate Investment in Gurgaon, Top Property Investment in Gurgaon, Smart Investment in Real Estate in Gurgaon, Best Property to Invest in Gurgaon"
   />
   <link rel="canonical" href="https://www.groupdealz.in/" />
 
-  <meta name="DC.Title" content="GroupDealz - Real Estate Investment in Gurgaon" />
+  <meta name="DC.Title" content="Real Estate Investment & Top Property in Gurgaon" />
   <meta
     name="DC.Subject"
     content="Find the Best Real Estate Investment in Gurgaon. See top properties, simple tips, and smart ideas to help you earn more from your investment."
   />
 
-  <meta property="og:title" content="GroupDealz - Real Estate Investment in Gurgaon" />
+  <meta property="og:title" content="Real Estate Investment & Top Property in Gurgaon" />
   <meta
     property="og:description"
-    content="Find the Best Real Estate Investment in Gurgaon. See top properties, simple tips, and smart ideas to help you earn more from your investment."
+    content="Invest smart in real estate in Gurgaon with GroupDealz. Co-own RERA-registered properties from ₹10L. Earn rental income & get flexible exit options."
   />
   
   <meta name="language" content="en-us" />

@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { Helmet } from 'react-helmet-async';
 import { Mail, Phone, MapPin, Clock, MessageSquare, HelpCircle, Send, Users, Shield, TrendingUp } from "lucide-react";
 
 const Contact = () => {
@@ -122,6 +123,36 @@ const Contact = () => {
       </section> */}
 
       {/* Contact Methods */}
+       <Helmet>
+        <title>Contact for Real Estate & Property Investment Gurgaon</title>
+        <meta name="title" content="Contact for Real Estate & Property Investment Gurgaon" />
+        <meta
+          name="description"
+          content="Get in touch with GroupDealz for smart investment in real estate in Gurgaon. Speak with advisors or visit our office to start your property investment journey."
+        />
+        <meta name="keywords" content="Invest smart in real estate in Gurgaon with GroupDealz. Co-own RERA-registered properties from ₹10L. Earn rental income & get flexible exit options." />
+        <link rel="canonical" href="https://www.groupdealz.in/how-it-works" />
+      
+        <meta name="DC.Title" content="Contact for Real Estate & Property Investment Gurgaon" />
+        <meta
+          name="DC.Subject"
+          content="Get in touch with GroupDealz for smart investment in real estate in Gurgaon. Speak with advisors or visit our office to start your property investment journey.
+"
+        />
+      
+        <meta property="og:title" content="Contact for Real Estate & Property Investment Gurgaon" />
+        <meta
+          property="og:description"
+          content="Get in touch with GroupDealz for smart investment in real estate in Gurgaon. Speak with advisors or visit our office to start your property investment journey."
+        />
+      
+        <meta name="language" content="en-us" />
+        <meta name="coverage" content="Global" />
+        <meta name="robots" content="INDEX,FOLLOW" />
+        <meta name="GOOGLEBOT" content="INDEX, FOLLOW" />
+        <meta name="doc-type" content="Webpage" />
+        <meta name="revisit-after" content="7 days" />
+      </Helmet>
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">

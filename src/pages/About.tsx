@@ -75,9 +75,34 @@ const About = () => {
 
   return (
     <div className="min-h-screen">
-      <Helmet>
-        <title>About | GroupDealz</title>
-        <meta name="description" content="Learn more about GroupDealz and our mission to democratize real estate investment." />
+       <Helmet>
+        <title>About GroupDealz | Real Estate Projects Near Gurgaon</title>
+        <meta name="title" content="About GroupDealz | Real Estate Projects Near Gurgaon" />
+        <meta
+          name="description"
+          content="Explore upcoming real estate investment projects near Gurgaon. Invest with low budget and enjoy secure, RERA-registered opportunities with GroupDealz."
+        />
+        <meta name="keywords" content="Real Estate Investment in Projects Near Gurgaon, Upcoming Real Estate Investment Projects in Gurgaon, Real Estate Investment with Low Budget, Real Estate Investment Opportunities in Gurgaon" />
+        <link rel="canonical" href="https://www.groupdealz.in/how-it-works" />
+      
+        <meta name="DC.Title" content="About GroupDealz | Real Estate Projects Near Gurgaon" />
+        <meta
+          name="DC.Subject"
+          content="Explore upcoming real estate investment projects near Gurgaon. Invest with low budget and enjoy secure, RERA-registered opportunities with GroupDealz."
+        />
+      
+        <meta property="og:title" content="About GroupDealz | Real Estate Projects Near Gurgaon" />
+        <meta
+          property="og:description"
+          content="Explore upcoming real estate investment projects near Gurgaon. Invest with low budget and enjoy secure, RERA-registered opportunities with GroupDealz."
+        />
+      
+        <meta name="language" content="en-us" />
+        <meta name="coverage" content="Global" />
+        <meta name="robots" content="INDEX,FOLLOW" />
+        <meta name="GOOGLEBOT" content="INDEX, FOLLOW" />
+        <meta name="doc-type" content="Webpage" />
+        <meta name="revisit-after" content="7 days" />
       </Helmet>
 
       <Navbar />
