@@ -418,6 +418,8 @@ const HowItWorksPage = () => {
             ))}
           </div>
         </div>
+
+        
       </section>
 
       <Footer />
