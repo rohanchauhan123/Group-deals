@@ -11,7 +11,7 @@ const HowItWorks = () => {
     {
       icon: CreditCard,
       title: "Invest Your Amount",
-      description: "Start small and become a co-owner in premium properties that align with your investment goals. Build your real estate portfolio without the need for large capital.",
+      description: "Start small and become  co-owner in premium properties that align with your investment goals. Build your real estate portfolio without the need for large capital.",
       color: "secondary"
     },
     {
