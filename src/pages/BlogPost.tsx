@@ -29,7 +29,7 @@ const BlogPost = () => {
       date: "March 15, 2024",
       readTime: "5 min read",
       category: "Market Trends",
-      image: "/lovable-uploads/a001c620-565a-4b42-b7f2-1fcfc76a23fc.png",
+      image: "https://www.novyy.com/storage/blogs/666aa0a20ee32.png",
       content: `
         <h2>The Evolving Landscape of Delhi NCR Real Estate</h2>
         <p>Delhi NCR continues to be one of India's most dynamic real estate markets, with 2024 bringing unprecedented changes in investment patterns and opportunities. The region, encompassing Delhi, Gurgaon, Noida, Faridabad, and Ghaziabad, has witnessed a significant shift towards fractional ownership models.</p>
@@ -74,7 +74,7 @@ const BlogPost = () => {
       date: "March 12, 2024",
       readTime: "7 min read",
       category: "Investment Strategy",
-      image: "/src/assets/property-1.jpg",
+      image: "https://images.arrived.com/tr:h-1313,w-2100,q-90,c-maintain_ratio/images/wp/uploads/2022/05/What-is-fractional-real-estate-investing_-1.png",
       content: `
         <h2>Building Wealth Through Strategic Real Estate Diversification</h2>
         <p>Real estate investment has traditionally been reserved for the wealthy, but fractional ownership has democratized access to premium properties. With just ₹50,000, you can now build a well-diversified real estate portfolio across multiple properties and asset classes.</p>

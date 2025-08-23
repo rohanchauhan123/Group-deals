@@ -32,7 +32,7 @@ const Blog = () => {
       date: "March 15, 2024",
       readTime: "5 min read",
       category: "Market Trends",
-      image: "/lovable-uploads/a001c620-565a-4b42-b7f2-1fcfc76a23fc.png",
+      image: "https://www.novyy.com/storage/blogs/666aa0a20ee32.png",
       featured: true
     },
     {
@@ -43,7 +43,7 @@ const Blog = () => {
       date: "March 12, 2024",
       readTime: "7 min read",
       category: "Investment Strategy",
-      image: "/src/assets/property-1.jpg"
+      image: "https://images.arrived.com/tr:h-1313,w-2100,q-90,c-maintain_ratio/images/wp/uploads/2022/05/What-is-fractional-real-estate-investing_-1.png"
     }
   ];
 
