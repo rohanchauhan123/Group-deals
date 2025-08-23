@@ -74,7 +74,7 @@ const BlogPost = () => {
       date: "March 12, 2024",
       readTime: "7 min read",
       category: "Investment Strategy",
-      image: "https://i.postimg.cc/pTsSt5mK/blogn.jpg",
+      image: "https://i.postimg.cc/Y2n1Qzc1/blog2.jpg",
       content: `
         <h2>Breaking the Myth: Real Estate Investment Isn’t Just for the Rich</h2>
         <p>For a long time, real estate was seen as a playground for the wealthy. High entry costs, complex paperwork, and the need for huge capital often discouraged beginners from even considering this market. But today, with innovative models like fractional ownership, real estate investment with a low budget has become a reality. Even first-time investors can now access premium properties in high-demand cities like Gurgaon without draining their savings.</p>

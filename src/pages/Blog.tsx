@@ -43,7 +43,7 @@ const Blog = () => {
       date: "March 12, 2024",
       readTime: "7 min read",
       category: "Investment Strategy",
-      image: "https://i.postimg.cc/pTsSt5mK/blogn.jpg"
+      image: "https://i.postimg.cc/Y2n1Qzc1/blog2.jpg"
     }
   ];
 
