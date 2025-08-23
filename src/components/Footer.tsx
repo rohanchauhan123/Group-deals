@@ -25,7 +25,7 @@ const Footer = () => {
               <a href="https://x.com/thegroupdealz" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+              <a href="https://www.linkedin.com/company/groupdealz/" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
               <a href="https://www.instagram.com/groupdealz/" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
@@ -41,7 +41,7 @@ const Footer = () => {
               <li><Link to="/how-it-works" className="text-white/75 hover:text-primary transition-colors">How It Works</Link></li>
               
               <li><Link to="/about" className="text-white/75 hover:text-primary transition-colors">About Us</Link></li>
-              <li><a href="#" className="text-white/75 hover:text-primary transition-colors">Blog</a></li>
+              <li><a href="/blog" className="text-white/75 hover:text-primary transition-colors">Blog</a></li>
               <li><a href="/how-it-works" className="text-white/75 hover:text-primary transition-colors">FAQs</a></li>
             </ul>
           </div>

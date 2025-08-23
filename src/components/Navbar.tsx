@@ -17,6 +17,7 @@ const Navbar = () => {
     // { href: "/properties", label: "Properties" },
     { href: "/how-it-works", label: "How It Works" },
     { href: "/about", label: "About" },
+    { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Contact" },
   ];
 
