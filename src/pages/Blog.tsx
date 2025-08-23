@@ -37,13 +37,13 @@ const Blog = () => {
     },
     {
       id: 2,
-      title: "How to Build a Diversified Real Estate Portfolio with ₹50,000",
-      excerpt: "Learn practical strategies to diversify your real estate investments across different property types and locations in India with a modest budget.",
-      author: "Raj Patel",
+      title: "Breaking the Myth: Real Estate Investment Isn’t Just for the Rich",
+      excerpt: "Learn how fractional ownership allows anyone to invest in premium real estate in Gurgaon, starting small and building wealth over time.",
+      author: "Ankit Kumar",
       date: "March 12, 2024",
       readTime: "7 min read",
       category: "Investment Strategy",
-      image: "https://images.arrived.com/tr:h-1313,w-2100,q-90,c-maintain_ratio/images/wp/uploads/2022/05/What-is-fractional-real-estate-investing_-1.png"
+      image: "https://i.postimg.cc/pTsSt5mK/blogn.jpg"
     }
   ];
 

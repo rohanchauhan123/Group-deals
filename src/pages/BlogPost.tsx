@@ -68,80 +68,33 @@ const BlogPost = () => {
     },
     {
       id: 2,
-      title: "How to Build a Diversified Real Estate Portfolio with ₹50,000",
-      excerpt: "Learn practical strategies to diversify your real estate investments across different property types and locations in India with a modest budget.",
+      title: "Breaking the Myth: Real Estate Investment Isn’t Just for the Rich",
+      excerpt: "Learn how fractional ownership allows anyone to invest in premium real estate in Gurgaon, starting small and building wealth over time.",
       author: "Ankit Kumar",
       date: "March 12, 2024",
       readTime: "7 min read",
       category: "Investment Strategy",
-      image: "https://images.arrived.com/tr:h-1313,w-2100,q-90,c-maintain_ratio/images/wp/uploads/2022/05/What-is-fractional-real-estate-investing_-1.png",
+      image: "https://i.postimg.cc/pTsSt5mK/blogn.jpg",
       content: `
-        <h2>Building Wealth Through Strategic Real Estate Diversification</h2>
-        <p>Real estate investment has traditionally been reserved for the wealthy, but fractional ownership has democratized access to premium properties. With just ₹50,000, you can now build a well-diversified real estate portfolio across multiple properties and asset classes.</p>
+        <h2>Breaking the Myth: Real Estate Investment Isn’t Just for the Rich</h2>
+        <p>For a long time, real estate was seen as a playground for the wealthy. High entry costs, complex paperwork, and the need for huge capital often discouraged beginners from even considering this market. But today, with innovative models like fractional ownership, real estate investment with a low budget has become a reality. Even first-time investors can now access premium properties in high-demand cities like Gurgaon without draining their savings.</p>
         
-        <h3>Understanding Portfolio Diversification</h3>
-        <p>Diversification in real estate means spreading your investments across:</p>
-        <ul>
-          <li><strong>Geographic locations:</strong> Different cities and micro-markets</li>
-          <li><strong>Property types:</strong> Residential, commercial, retail, and hospitality</li>
-          <li><strong>Risk profiles:</strong> Stable income-generating vs growth-oriented properties</li>
-          <li><strong>Investment horizons:</strong> Short-term and long-term holdings</li>
-        </ul>
+        <h3>Why Real Estate Still Stands Strong</h3>
+        <p>Compared to volatile stocks or low-return savings accounts, real estate continues to be one of the most reliable asset classes. It offers property appreciation, stability, and the added advantage of rental income. For real estate investors in Gurgaon, the city’s booming infrastructure, multinational hubs, and lifestyle upgrades make it one of the best destinations to build long-term wealth. The growth of metro lines, the upcoming Dwarka Expressway, and the city’s corporate dominance all point to sustained demand for both residential and commercial spaces.</p>
         
-        <h3>Your ₹50,000 Investment Strategy</h3>
-        <p><strong>Allocation 1: Commercial Office Space (₹15,000 - 30%)</strong><br>
-        Invest in a premium office complex in Connaught Place or Cyber City. Commercial properties typically offer higher rental yields (10-14%) and stable returns.</p>
+        <h3>The Entry Barrier: High Prices</h3>
+        <p>The best property to invest in Gurgaon often comes with a price tag running into crores, especially for luxury apartments or Grade A commercial spaces. For many, these figures are out of reach. This has created a perception that only the rich can participate in profitable property investment.</p>
         
-        <p><strong>Allocation 2: Residential Apartment (₹15,000 - 30%)</strong><br>
-        Purchase fractional shares in a luxury residential project in Gurgaon or Noida. Residential properties provide capital appreciation and rental income potential.</p>
+        <h3>The Solution: Fractional Ownership</h3>
+        <p>This is where fractional ownership changes the game. Instead of buying an entire property, investors can pool resources with others and purchase a share of a premium asset. For example, instead of investing ₹1 crore into a full commercial unit, you can start with a fraction of that amount while still enjoying returns proportional to your share.</p>
+        <p>Platforms like Groupdealz make the process seamless. They not only identify the best property to invest in Gurgaon but also handle due diligence, paperwork, and property management. This gives small investors the same opportunities as large institutional players—without the stress of managing tenants or operations.</p>
         
-        <p><strong>Allocation 3: Retail Space (₹10,000 - 20%)</strong><br>
-        Diversify into retail properties in high-footfall areas like Sector 18 Noida or major malls. Retail spaces benefit from India's growing consumption story.</p>
+        <h3>Why Start Small?</h3>
+        <p>The beauty of real estate investment with a low budget is scalability. You can begin with one property share, learn how the model works, and then expand gradually. Over time, small investments compound into significant wealth. With every step, your portfolio grows across different sectors—residential, retail, and commercial—spreading risk and maximising returns.</p>
         
-        <p><strong>Allocation 4: Growth Markets (₹10,000 - 20%)</strong><br>
-        Invest in emerging areas with infrastructure development planned, such as properties near the upcoming Jewar Airport or new metro corridors.</p>
-        
-        <h3>Step-by-Step Implementation Guide</h3>
-        
-        <p><strong>Step 1: Research and Analysis</strong><br>
-        Before investing, thoroughly research each property's location, developer track record, rental potential, and growth prospects. Use online platforms to compare different investment opportunities.</p>
-        
-        <p><strong>Step 2: Start with Conservative Investments</strong><br>
-        Begin with established areas like central Delhi commercial properties that offer stable returns. As you gain experience, gradually move to higher-growth potential areas.</p>
-        
-        <p><strong>Step 3: Monitor Market Cycles</strong><br>
-        Real estate markets are cyclical. Time your investments to take advantage of market corrections and avoid peak pricing periods.</p>
-        
-        <p><strong>Step 4: Reinvest Returns</strong><br>
-        Use rental income and capital appreciation to acquire additional fractional shares, compounding your investment growth over time.</p>
-        
-        <h3>Risk Management Strategies</h3>
-        <p><strong>Geographic Diversification:</strong> Don't put all your money in one city. Spread investments across Delhi, Gurgaon, and Noida to reduce location-specific risks.</p>
-        
-        <p><strong>Asset Class Diversification:</strong> Balance between income-generating commercial properties and appreciation-focused residential investments.</p>
-        
-        <p><strong>Developer Risk:</strong> Invest in properties from multiple reputed developers to avoid concentration risk with a single builder.</p>
-        
-        <h3>Expected Returns and Timeline</h3>
-        <p>With a well-diversified ₹50,000 portfolio:</p>
-        <ul>
-          <li><strong>Year 1-2:</strong> Focus on rental yield (8-12% annually)</li>
-          <li><strong>Year 3-5:</strong> Capital appreciation kicks in (5-8% annually)</li>
-          <li><strong>Year 5+:</strong> Total returns of 12-18% annually possible</li>
-        </ul>
-        
-        <h3>Tax Optimization</h3>
-        <p>Fractional ownership investments qualify for various tax benefits:</p>
-        <ul>
-          <li>Depreciation benefits on commercial properties</li>
-          <li>Long-term capital gains tax advantages (after 3 years)</li>
-          <li>Interest deduction on borrowed funds</li>
-        </ul>
-        
-        <h3>Getting Started Today</h3>
-        <p>The key to successful real estate investment is starting early and staying consistent. With fractional ownership platforms, you can begin building your diversified portfolio immediately with just ₹7,500 per property.</p>
-        
-        <p>Remember, real estate is a long-term investment. Focus on quality properties in prime locations, maintain patience, and let the power of compounding work in your favor. Your ₹50,000 investment today could grow into a substantial portfolio worth several lakhs within 5-7 years.</p>
+        <h3>Final Thoughts</h3>
+        <p>Gone are the days when real estate was reserved for the wealthy elite. With fractional ownership and trusted platforms like Groupdealz, anyone can start small and still access premium real estate. Gurgaon, with its unmatched growth and global appeal, continues to be one of the best property investment markets in India.</p>
+        <p>If you’ve been waiting to step into real estate, the opportunity is here. Start small, invest smart, and let your wealth grow—because even a modest beginning in Gurgaon’s real estate today can lead to financial freedom tomorrow.</p>
       `
     }
   ];
