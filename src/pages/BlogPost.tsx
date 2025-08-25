@@ -37,7 +37,7 @@ const BlogPost = () => {
       image: "https://i.postimg.cc/Y2n1Qzc1/blog2.jpg",
       keywords: ["real estate", "investment", "fractional ownership", "Gurgaon"],
       content: `
-        <h1 text-lg>Breaking the Myth: Real Estate Investment Isn’t Just for the Rich</h1>
+       
         <p>For a long time, real estate was seen as a playground for the wealthy. High entry costs, complex paperwork, and the need for huge capital often discouraged beginners from even considering this market. But today, with innovative models like fractional ownership, real estate investment with a low budget has become a reality. Even first-time investors can now access premium properties in high-demand cities like Gurgaon without draining their savings.</p>
         
         <h3>Why Real Estate Still Stands Strong</h3>
@@ -70,8 +70,8 @@ const BlogPost = () => {
       image: "https://i.postimg.cc/WbSDLRxN/blog3.jpg",
       keywords: ["Gurgaon", "real estate", "investment", "market trends", "infrastructure"],
       content: `
-        <h1 text-lg>The Future of Real Estate Investment in Gurgaon</h1>
-        <p>Gurgaon, now officially known as Gurugram, has rapidly transformed into one of India’s most dynamic real estate markets. With its thriving corporate hubs, world-class infrastructure, and proximity to Delhi, Gurgaon has become a magnet for investors and homebuyers alike. As we look ahead, the future of real estate investment in Gurgaon is poised for remarkable growth, offering lucrative opportunities for both seasoned and first-time investors.</p>
+        
+        <p>Gurgaon, now officially known as Gurugram, has rapidly transformed into one of India’s most dynamic real estate markets. With its thriving corporate hubs, world-class infrastructure, and proximity to Delhi, Gurgaon has become a magnet for investors and homebuyers alike. As we look ahead, the <a style="color: blue; font-size: 16px;" href="https://groupdealz.in">future of real estate investment in Gurgaon</a> is poised for remarkable growth, offering lucrative opportunities for both seasoned and first-time investors.</p>
         
         <h3>Why Gurgaon Stands Out as an Investment Destination</h3>
         <p>Over the past two decades, Gurgaon has emerged as a global business hub. The presence of Fortune 500 companies, multinational corporations, IT firms, and start-ups has fueled an ever-growing demand for commercial and residential spaces. With excellent connectivity through NH-48, Dwarka Expressway, and the Delhi Metro, Gurgaon has positioned itself as one of the most accessible and promising investment destinations in India.</p>
@@ -85,7 +85,7 @@ const BlogPost = () => {
         <p>The city’s growing population of working professionals, entrepreneurs, and expatriates has created a robust demand for premium housing. Developers are focusing on high-rise apartments, gated communities, and smart homes, offering investors an opportunity to target high-value tenants.</p>
         
         <h4>3. Fractional Ownership Opportunities</h4>
-        <p>Traditionally, premium real estate required huge capital outlays, leaving smaller investors behind. Today, companies like <a style="color: blue; font-size: 16px;" href="https://groupdealz.in">Groupdealz</a> are redefining real estate investments through fractional ownership. This model allows multiple investors to pool resources and collectively own premium assets. It’s a practical and affordable way for individuals to enter Gurgaon’s booming property market.</p>
+        <p>Traditionally, premium real estate required huge capital outlays, leaving smaller investors behind. Today, companies like Groupdealz are redefining real estate investments through fractional ownership. This model allows multiple investors to pool resources and collectively own premium assets. It’s a practical and affordable way for individuals to enter Gurgaon’s booming property market.</p>
         
         <h4>4. Infrastructure Boost</h4>
         <p>The upcoming Dwarka Expressway, metro expansions, and connectivity projects will further increase property values in Gurgaon. Investors who identify opportunities early in these growth corridors stand to gain significantly in the coming years.</p>
