@@ -6,9 +6,11 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Search, Clock, User, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface BlogPost {
   id: number;
+  slug: string;
   title: string;
   excerpt: string;
   author: string;
@@ -26,17 +28,7 @@ const Blog = () => {
   const blogPosts: BlogPost[] = [
     {
       id: 1,
-      title: "Real Estate Investment Trends in Delhi NCR 2024",
-      excerpt: "Discover the latest trends shaping the real estate investment landscape in Delhi NCR and how fractional ownership is revolutionizing property investment.",
-      author: "Priya Sharma",
-      date: "March 15, 2024",
-      readTime: "5 min read",
-      category: "Market Trends",
-      image: "https://www.novyy.com/storage/blogs/666aa0a20ee32.png",
-      featured: true
-    },
-    {
-      id: 2,
+      slug: "breaking-the-myth-real-estate-investment-isnt-just-for-the-rich",
       title: "Breaking the Myth: Real Estate Investment Isn’t Just for the Rich",
       excerpt: "Learn how fractional ownership allows anyone to invest in premium real estate in Gurgaon, starting small and building wealth over time.",
       author: "Ankit Kumar",
@@ -144,7 +136,7 @@ const Blog = () => {
                         </div>
                       </div>
                       
-                      <Button variant="link" className="p-0 h-auto" onClick={() => window.location.href = `/blog/${featuredPost.id}`}>
+                      <Button variant="link" className="p-0 h-auto" onClick={() => window.location.href = `/blog/${featuredPost.slug}`}>
                         Read More <ArrowRight className="h-4 w-4 ml-1" />
                       </Button>
                     </div>
@@ -162,7 +154,7 @@ const Blog = () => {
           {regularPosts.length > 0 ? (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {regularPosts.map((post) => (
-                <Card key={post.id} className="overflow-hidden hover-lift group cursor-pointer" onClick={() => window.location.href = `/blog/${post.id}`}>
+                <Card key={post.id} className="overflow-hidden hover-lift group cursor-pointer" onClick={() => window.location.href = `/blog/${post.slug}`}>
                   <div className="aspect-video overflow-hidden">
                     <img
                       src={post.image}
@@ -173,7 +165,7 @@ const Blog = () => {
                   <CardHeader className="pb-2">
                     <Badge variant="outline" className="w-fit mb-2">{post.category}</Badge>
                     <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
-                      {post.title}
+                      <Link to={`/blog/${post.slug}`}>{post.title}</Link>
                     </h3>
                   </CardHeader>
                   <CardContent>
