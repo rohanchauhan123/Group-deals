@@ -51,7 +51,7 @@ const Blog = () => {
      {
       id: 3,
       slug: "assured-return-on-investment-in-commercial-property-in-gurgaon",
-      title: "Breaking the Myth: Real Estate Investment Isn’t Just for the Rich",
+      title: "Assured Return on Investment in Commercial Property in Gurgaon: How to Invest Wisely",
       excerpt: "Learn how fractional ownership allows anyone to invest in premium real estate in Gurgaon, starting small and building wealth over time.",
       author: "Group Dealz",
       date: "March 12, 2024",

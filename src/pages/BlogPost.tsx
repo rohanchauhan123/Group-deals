@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Clock, User, Share2, Calendar } from "lucide-react";
+import { Helmet } from "react-helmet";
 
 interface BlogPost {
   id: number;
@@ -16,6 +17,7 @@ interface BlogPost {
   category: string;
   image: string;
   content: string;
+  keywords: string[];
 }
 
 const BlogPost = () => {
@@ -33,6 +35,7 @@ const BlogPost = () => {
       readTime: "7 min read",
       category: "Investment Strategy",
       image: "https://i.postimg.cc/Y2n1Qzc1/blog2.jpg",
+      keywords: ["real estate", "investment", "fractional ownership", "Gurgaon"],
       content: `
         <h1 text-lg>Breaking the Myth: Real Estate Investment Isn’t Just for the Rich</h1>
         <p>For a long time, real estate was seen as a playground for the wealthy. High entry costs, complex paperwork, and the need for huge capital often discouraged beginners from even considering this market. But today, with innovative models like fractional ownership, real estate investment with a low budget has become a reality. Even first-time investors can now access premium properties in high-demand cities like Gurgaon without draining their savings.</p>
@@ -65,6 +68,7 @@ const BlogPost = () => {
       readTime: "8 min read",
       category: "Market Trends",
       image: "https://i.postimg.cc/WbSDLRxN/blog3.jpg",
+      keywords: ["Gurgaon", "real estate", "investment", "market trends", "infrastructure"],
       content: `
         <h1 text-lg>The Future of Real Estate Investment in Gurgaon</h1>
         <p>Gurgaon, now officially known as Gurugram, has rapidly transformed into one of India’s most dynamic real estate markets. With its thriving corporate hubs, world-class infrastructure, and proximity to Delhi, Gurgaon has become a magnet for investors and homebuyers alike. As we look ahead, the future of real estate investment in Gurgaon is poised for remarkable growth, offering lucrative opportunities for both seasoned and first-time investors.</p>
@@ -99,25 +103,26 @@ const BlogPost = () => {
     {
       id: 3,
       slug: "assured-return-on-investment-in-commercial-property-in-gurgaon",
-      title: "Assured Return on Investment in Commercial Property in Gurgaon: How to Invest Wisely",
-      excerpt: "Explore how assured return investments in Gurgaon’s commercial properties offer secure and profitable opportunities with a low entry point of ₹10 lakh.",
+      title: "Assured ROI in Commercial Property Gurgaon | Groupdealz",
+      excerpt: "Get assured ROI in commercial property in Gurgaon with Groupdealz.Invest smart, earn steady returns, and grow your money safely.",
       author: "Group Dealz",
       date: "August 25, 2025",
       readTime: "6 min read",
       category: "Investment Strategy",
       image: "https://i.postimg.cc/pXtFDJMj/blog4.jpg",
+      keywords: ["Assured ROI in Commercial Property Gurgaon", "Guaranteed returns on commercial property Gurgaon", "Commercial property for investors in Gurgaon"],
       content: `
-        <h1 text-lg>Assured Return on Investment in Commercial Property in Gurgaon: How to Invest Wisely</h1>
-        <p>When it comes to building wealth, commercial property has always been a reliable choice for investors. Among India’s most sought-after investment destinations, Gurgaon stands out due to its rapid urban development, corporate presence, and growing demand for premium commercial spaces. With the concept of Assured Return on Investment in Commercial Property in Gurgaon, investors can now enjoy both security and profitability, making it a win-win opportunity.</p>
+       
+        <p>When it comes to building wealth, commercial property has always been a reliable choice for investors. Among India’s most sought-after investment destinations, Gurgaon stands out due to its rapid urban development, corporate presence, and growing demand for premium commercial spaces. With the concept of <a style="color: blue; font-size: 16px;" href="https://groupdealz.in">Assured Return on Investment in Commercial Property in Gurgaon </a>, investors can now enjoy both security and profitability, making it a win-win opportunity.</p>
         
-        <h3>Why Choose Commercial Property in Gurgaon?</h3>
+        <h3 text-xl>Why Choose Commercial Property in Gurgaon?</h3>
         <p>Gurgaon, often called the “Millennium City,” is home to multinational companies, IT hubs, luxury retail outlets, and premium office spaces. This strong corporate ecosystem fuels a constant demand for commercial properties. Investors not only gain from long-term capital appreciation but also from steady rental incomes. by choosing projects with assured returns, the risk factor reduces significantly, and you start earning from day one.</p>
         
         <h3>What is Assured Return Investment?</h3>
         <p>Assured return investment means that the developer guarantees a fixed return (monthly, quarterly, or annually) on your investment, irrespective of occupancy. This is particularly attractive for investors who want predictable income without waiting for tenants. For example, an investment with <a style="color: blue; font-size: 16px;" href="https://groupdealz.in">GroupDealz</a> ensures transparency, reliability, and timely payouts, making it a trusted name in the Gurgaon real estate market.</p>
         
         <h3>Minimum Investment – Start with ₹10 Lakh</h3>
-        <p>One of the major advantages of investing in commercial property through <a style="color: blue; font-size: 16px;" href="https://groupdealz.in">GroupDealz</a> is the low entry barrier. You can begin your journey with as little as ₹10 lakh. This makes it possible for even first-time investors to tap into the premium commercial property market of Gurgaon without stretching their finances. Compared to traditional investments like gold or fixed deposits, the potential returns are much higher here.</p>
+        <p>One of the major advantages of investing in commercial property through <a style="color: blue; font-size: 16px;" href="https://share.google/Dyac1WrvldMLvnFO1">GroupDealz</a> is the low entry barrier. You can begin your journey with as little as ₹10 lakh. This makes it possible for even first-time investors to tap into the premium commercial property market of Gurgaon without stretching their finances. Compared to traditional investments like gold or fixed deposits, the potential returns are much higher here.</p>
         
         <h3>Benefits of Assured Return on Investment in Commercial Property in Gurgaon</h3>
         <h4>1. Stable Income Stream</h4>
@@ -137,7 +142,7 @@ const BlogPost = () => {
         
         <h3>How to Invest Wisely?</h3>
         <h4>1. Choose the Right Developer</h4>
-        <p>Opt for trusted names like <a style="color: blue; font-size: 16px;" href="https://groupdealz.in">GroupDealz</a>, known for offering genuine, assured return opportunities.</p>
+        <p>Opt for trusted names like GroupDealz, known for offering genuine, assured return opportunities.</p>
         
         <h4>2. Check Location Advantage</h4>
         <p>Invest in properties located near business districts, metro stations, or upcoming commercial hubs.</p>
@@ -152,7 +157,7 @@ const BlogPost = () => {
         <p>Seek guidance from property consultants to make well-informed decisions.</p>
         
         <h3>Conclusion</h3>
-        <p>The concept of Assured Return on Investment in Commercial Property in Gurgaon is a game-changer for investors seeking both safety and profitability. With the city’s booming infrastructure and growing corporate demand, commercial properties promise excellent growth potential. By starting with a ₹10 lakh minimum investment through trusted platforms like <a style="color: blue; font-size: 16px;" href="https://groupdealz.in">GroupDealz</a>, you can secure a steady income stream and long-term financial stability.</p>
+        <p>The concept of Assured Return on Investment in Commercial Property in Gurgaon is a game-changer for investors seeking both safety and profitability. With the city’s booming infrastructure and growing corporate demand, commercial properties promise excellent growth potential. By starting with a ₹10 lakh minimum investment through trusted platforms like GroupDealz, you can secure a steady income stream and long-term financial stability.</p>
         <p>Now is the time to invest wisely—make Gurgaon’s commercial real estate your gateway to assured prosperity.</p>
       `
     }
@@ -180,6 +185,19 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>{post.title} </title>
+        <meta name="description" content={post.excerpt} />
+        <meta name="keywords" content={post.keywords.join(", ")} />
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={post.excerpt} />
+        <link rel="canonical" href={`https://yourdomain.com/blog/${post.slug}`} />
+        <meta property="og:image" content={post.image} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={`https://yourdomain.com/blog/${post.slug}`} />
+        {/* Add more meta tags as needed */}
+      </Helmet>
+      
       <Navbar />
       
       {/* Hero Section */}
