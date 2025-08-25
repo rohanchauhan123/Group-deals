@@ -31,11 +31,33 @@ const Blog = () => {
       slug: "breaking-the-myth-real-estate-investment-isnt-just-for-the-rich",
       title: "Breaking the Myth: Real Estate Investment Isn’t Just for the Rich",
       excerpt: "Learn how fractional ownership allows anyone to invest in premium real estate in Gurgaon, starting small and building wealth over time.",
-      author: "Ankit Kumar",
+      author: "Group Dealz",
       date: "March 12, 2024",
       readTime: "7 min read",
       category: "Investment Strategy",
       image: "https://i.postimg.cc/Y2n1Qzc1/blog2.jpg"
+    },
+     {
+      id: 2,
+      slug: "the-future-of-real-estate-investment-in-gurgaon",
+      title: "The Future of Real Estate Investment in Gurgaon",
+      excerpt: "Discover why Gurgaon remains a top destination for real estate investment, with trends like fractional ownership and infrastructure growth driving opportunities.",
+      author: "Group Dealz",
+      date: "March 12, 2024",
+      readTime: "7 min read",
+      category: "Investment Strategy",
+      image: "https://i.postimg.cc/WbSDLRxN/blog3.jpg"
+    },
+     {
+      id: 3,
+      slug: "assured-return-on-investment-in-commercial-property-in-gurgaon",
+      title: "Breaking the Myth: Real Estate Investment Isn’t Just for the Rich",
+      excerpt: "Learn how fractional ownership allows anyone to invest in premium real estate in Gurgaon, starting small and building wealth over time.",
+      author: "Group Dealz",
+      date: "March 12, 2024",
+      readTime: "7 min read",
+      category: "Investment Strategy",
+      image: "https://i.postimg.cc/pXtFDJMj/blog4.jpg"
     }
   ];
 
@@ -59,7 +81,7 @@ const Blog = () => {
       <section className="pt-20 pb-12 bg-gradient-subtle">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-primary bg-clip-text text-black">
               Real Estate Investment Insights
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
