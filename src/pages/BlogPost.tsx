@@ -27,7 +27,7 @@ const BlogPost = () => {
     {
       id: 1,
       slug: "breaking-the-myth-real-estate-investment-isnt-just-for-the-rich",
-      title: "Breaking the Myth: Real Estate Investment Isn’t Just for the Rich",
+      title: "Breaking the Myth: Real Estate Investment with Low Budget",
       excerpt: "Breaking the myth of property ownership—explore real estate investment with low budget and discover the best property to invest in Gurgaon today.",
       author: "Group Dealz",
       date: "March 12, 2024",
@@ -133,7 +133,7 @@ const BlogPost = () => {
         <p>Gurgaon, often called the “Millennium City,” is home to multinational companies, IT hubs, luxury retail outlets, and premium office spaces. This strong corporate ecosystem fuels a constant demand for commercial properties. Investors not only gain from long-term capital appreciation but also from steady rental incomes. by choosing projects with assured returns, the risk factor reduces significantly, and you start earning from day one.</p>
 
         <h2>What is Assured Return Investment?</h2>
-        <p>Assured return investment means that the developer guarantees a fixed return (monthly, quarterly, or annually) on your investment, irrespective of occupancy. This is particularly attractive for investors who want predictable income without waiting for tenants. For example, an investment with <a style="color: blue; font-size: 16px;" href="https://groupdealz.in">GroupDealz</a> ensures transparency, reliability, and timely payouts, making it a trusted name in the Gurgaon real estate market.</p>
+        <p>Assured return investment means that the developer guarantees a fixed return (monthly, quarterly, or annually) on your investment, irrespective of occupancy. This is particularly attractive for investors who want predictable income without waiting for tenants. For example, an investment with GroupDealz ensures transparency, reliability, and timely payouts, making it a trusted name in the Gurgaon real estate market.</p>
 
         <h2>Minimum Investment – Start with ₹10 Lakh</h2>
         <p>One of the major advantages of investing in commercial property through <a style="color: blue; font-size: 16px;" href="https://share.google/Dyac1WrvldMLvnFO1">GroupDealz</a> is the low entry barrier. You can begin your journey with as little as ₹10 lakh. This makes it possible for even first-time investors to tap into the premium commercial property market of Gurgaon without stretching their finances. Compared to traditional investments like gold or fixed deposits, the potential returns are much higher here.</p>
