@@ -29,13 +29,13 @@ const BlogPost = () => {
       id: 1,
       slug: "breaking-the-myth-real-estate-investment-isnt-just-for-the-rich",
       title: "Breaking the Myth: Real Estate Investment Isn’t Just for the Rich",
-      excerpt: "Learn how fractional ownership allows anyone to invest in premium real estate in Gurgaon, starting small and building wealth over time.",
+      excerpt: " Breaking the myth of property ownership—explore real estate investment with low budget and discover the best property to invest in Gurgaon today.",
       author: "Group Dealz",
       date: "March 12, 2024",
       readTime: "7 min read",
       category: "Investment Strategy",
       image: "https://i.postimg.cc/Y2n1Qzc1/blog2.jpg",
-      keywords: ["real estate", "investment", "fractional ownership", "Gurgaon"],
+      keywords: [" Real Estate Investment with Low Budget", "Best Property to Invest in Gurgaon", "Affordable Property Investment", "Low Budget Real Estate in Gurgaon" , "High ROI Properties Gurgaon", "Real Estate Investment for Beginners"],
       content: `
        
         <p>For a long time, real estate was seen as a playground for the wealthy. High entry costs, complex paperwork, and the need for huge capital often discouraged beginners from even considering this market. But today, with innovative models like fractional ownership, real estate investment with a low budget has become a reality. Even first-time investors can now access premium properties in high-demand cities like Gurgaon without draining their savings.</p>
@@ -61,14 +61,14 @@ const BlogPost = () => {
     {
       id: 2,
       slug: "the-future-of-real-estate-investment-in-gurgaon",
-      title: "The Future of Real Estate Investment in Gurgaon",
-      excerpt: "Discover why Gurgaon remains a top destination for real estate investment, with trends like fractional ownership and infrastructure growth driving opportunities.",
+      title: "The Future of Real Estate Investment in Gurgaon Smart Growth",
+      excerpt: "Discover the future of Real Estate Investment in Gurgaon. Know upcoming trends, growth areas, and why Gurgaon is the top choice for investors.",
       author: "Group Dealz",
       date: "August 25, 2025",
       readTime: "8 min read",
       category: "Market Trends",
       image: "https://i.postimg.cc/WbSDLRxN/blog3.jpg",
-      keywords: ["Gurgaon", "real estate", "investment", "market trends", "infrastructure"],
+      keywords: ["Real Estate Investment in Gurgaon", " Future of Real Estate in Gurgaon", "Smart Property Investment in Gurgaon", "Best Property to Invest in Gurgaon", "Commercial Property in Gurgaon" , "Residential Property in Gurgaon"],
       content: `
         
         <p>Gurgaon, now officially known as Gurugram, has rapidly transformed into one of India’s most dynamic real estate markets. With its thriving corporate hubs, world-class infrastructure, and proximity to Delhi, Gurgaon has become a magnet for investors and homebuyers alike. As we look ahead, the <a style="color: blue; font-size: 16px;" href="https://groupdealz.in">future of real estate investment in Gurgaon</a> is poised for remarkable growth, offering lucrative opportunities for both seasoned and first-time investors.</p>
