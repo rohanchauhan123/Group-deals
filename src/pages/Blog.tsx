@@ -1,82 +1,98 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Search, Clock, User, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { client } from "@/lib/sanityClient.ts"; // Assuming your Sanity client is here
 
 interface BlogPost {
-  id: number;
-  slug: string;
+  _id: string;
+  slug: { current: string };
   title: string;
   excerpt: string;
   author: string;
   date: string;
   readTime: string;
   category: string;
-  image: string;
+  image: { asset: { url: string } };
   featured?: boolean;
 }
 
 const Blog = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
+  const [categories, setCategories] = useState<string[]>(["All"]);
+  const [loading, setLoading] = useState(true);
 
-  const blogPosts: BlogPost[] = [
-    {
-      id: 1,
-      slug: "breaking-the-myth-real-estate-investment-isnt-just-for-the-rich",
-      title: "Breaking the Myth: Real Estate Investment Isn’t Just for the Rich",
-      excerpt: "Learn how fractional ownership allows anyone to invest in premium real estate in Gurgaon, starting small and building wealth over time.",
-      author: "Group Dealz",
-      date: "March 12, 2024",
-      readTime: "7 min read",
-      category: "Investment Strategy",
-      image: "https://i.postimg.cc/Y2n1Qzc1/blog2.jpg"
-    },
-     {
-      id: 2,
-      slug: "the-future-of-real-estate-investment-in-gurgaon",
-      title: "The Future of Real Estate Investment in Gurgaon",
-      excerpt: "Discover why Gurgaon remains a top destination for real estate investment, with trends like fractional ownership and infrastructure growth driving opportunities.",
-      author: "Group Dealz",
-      date: "March 12, 2024",
-      readTime: "7 min read",
-      category: "Investment Strategy",
-      image: "https://i.postimg.cc/WbSDLRxN/blog3.jpg"
-    },
-     {
-      id: 3,
-      slug: "assured-return-on-investment-in-commercial-property-in-gurgaon",
-      title: "Assured Return on Investment in Commercial Property in Gurgaon: How to Invest Wisely",
-      excerpt: "Learn how fractional ownership allows anyone to invest in premium real estate in Gurgaon, starting small and building wealth over time.",
-      author: "Group Dealz",
-      date: "March 12, 2024",
-      readTime: "7 min read",
-      category: "Investment Strategy",
-      image: "https://i.postimg.cc/pXtFDJMj/blog4.jpg"
-    }
-  ];
+  // Fetch posts and categories from Sanity
+  useEffect(() => {
+    const fetchPosts = async () => {
+      try {
+        // GROQ query to fetch all posts
+        const query = `*[_type == "post"]{
+          _id,
+          title,
+          slug,
+          excerpt,
+          author,
+          date,
+          readTime,
+          category,
+          image{
+            asset->{url}
+          },
+          featured
+        }`;
+        const posts: BlogPost[] = await client.fetch(query);
+        setBlogPosts(posts);
 
-  const categories = ["All", "Market Trends", "Investment Strategy"];
+        // Extract unique categories from posts
+        const uniqueCategories = [
+          "All",
+          ...new Set(posts.map((post) => post.category).filter(Boolean)),
+        ];
+        setCategories(uniqueCategories);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching posts:", error);
+        setLoading(false);
+      }
+    };
+    fetchPosts();
+  }, []);
 
-  const filteredPosts = blogPosts.filter(post => {
-    const matchesSearch = post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         post.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
+  const filteredPosts = blogPosts.filter((post) => {
+    const matchesSearch =
+      post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      post.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCategory = selectedCategory === "All" || post.category === selectedCategory;
     return matchesSearch && matchesCategory;
   });
 
-  const featuredPost = blogPosts.find(post => post.featured);
-  const regularPosts = filteredPosts.filter(post => !post.featured);
+  const featuredPost = blogPosts.find((post) => post.featured);
+  const regularPosts = filteredPosts.filter((post) => !post.featured);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-background">
+        <Navbar />
+        <div className="container mx-auto px-4 py-20 text-center">
+          <p className="text-lg text-muted-foreground">Loading...</p>
+        </div>
+        <Footer />
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="pt-20 pb-12 bg-gradient-subtle">
         <div className="container mx-auto px-4">
@@ -87,7 +103,7 @@ const Blog = () => {
             <p className="text-xl text-muted-foreground mb-8">
               Stay informed with the latest trends, strategies, and tips for successful real estate investment in India
             </p>
-            
+
             {/* Search Bar */}
             <div className="relative max-w-md mx-auto">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
@@ -132,7 +148,7 @@ const Blog = () => {
                 <div className="md:flex">
                   <div className="md:w-1/2">
                     <img
-                      src={featuredPost.image}
+                      src={featuredPost.image.asset.url}
                       alt={featuredPost.title}
                       className="w-full h-64 md:h-full object-cover"
                     />
@@ -145,7 +161,7 @@ const Blog = () => {
                     <p className="text-muted-foreground mb-6 leading-relaxed">
                       {featuredPost.excerpt}
                     </p>
-                    
+
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-4 text-sm text-muted-foreground">
                         <div className="flex items-center">
@@ -157,9 +173,15 @@ const Blog = () => {
                           {featuredPost.readTime}
                         </div>
                       </div>
-                      
-                      <Button variant="link" className="p-0 h-auto" onClick={() => window.location.href = `/blog/${featuredPost.slug}`}>
-                        Read More <ArrowRight className="h-4 w-4 ml-1" />
+
+                      <Button
+                        variant="link"
+                        className="p-0 h-auto"
+                        asChild
+                      >
+                        <Link to={`/blog/${featuredPost.slug.current}`}>
+                          Read More <ArrowRight className="h-4 w-4 ml-1" />
+                        </Link>
                       </Button>
                     </div>
                   </div>
@@ -176,10 +198,13 @@ const Blog = () => {
           {regularPosts.length > 0 ? (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {regularPosts.map((post) => (
-                <Card key={post.id} className="overflow-hidden hover-lift group cursor-pointer" onClick={() => window.location.href = `/blog/${post.slug}`}>
+                <Card
+                  key={post._id}
+                  className="overflow-hidden hover-lift group cursor-pointer"
+                >
                   <div className="aspect-video overflow-hidden">
                     <img
-                      src={post.image}
+                      src={post.image.asset.url}
                       alt={post.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
@@ -187,14 +212,14 @@ const Blog = () => {
                   <CardHeader className="pb-2">
                     <Badge variant="outline" className="w-fit mb-2">{post.category}</Badge>
                     <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
-                      <Link to={`/blog/${post.slug}`}>{post.title}</Link>
+                      <Link to={`/blog/${post.slug.current}`}>{post.title}</Link>
                     </h3>
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground mb-4 line-clamp-3">
                       {post.excerpt}
                     </p>
-                    
+
                     <div className="flex items-center justify-between text-sm text-muted-foreground">
                       <div className="flex items-center space-x-3">
                         <div className="flex items-center">
