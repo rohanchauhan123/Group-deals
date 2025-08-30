@@ -12,6 +12,7 @@ import SanityBlockContent from "@sanity/block-content-to-react";
 interface BlogPostData {
   _id: string;
   slug: { current: string };
+  meta_title: string;
   title: string;
   excerpt: string;
   author: string;
@@ -89,13 +90,34 @@ const BlogPost = () => {
     );
   }
 
+  const serializers = {
+    types: {
+      table: ({ node }) => (
+        <table className="table-auto w-full border-collapse border border-gray-300 text-foreground">
+          <tbody>
+            {node.rows.map((row, rowIndex) => (
+              <tr key={rowIndex} className="border-b">
+                {row.cells.map((cell, cellIndex) => (
+                  <td key={cellIndex} className="border p-2">
+                    {cell}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      ),
+    },
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>{post.title}</title>
         <meta name="description" content={post.excerpt} />
+        <meta name="title" content={post.meta_title} />
         <meta name="keywords" content={post.keywords.join(", ")} />
-        <meta property="og:title" content={post.title} />
+        <meta property="og:title" content={post.meta_title} />
         <meta property="og:description" content={post.excerpt} />
         <meta property="og:image" content={post.image.asset.url} />
         <meta property="og:type" content="article" />
@@ -179,6 +201,7 @@ const BlogPost = () => {
               blocks={post.content}
               projectId={client.config().projectId}
               dataset={client.config().dataset}
+              serializers={serializers}
             />
           </div>
         </div>
