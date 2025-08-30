@@ -45,7 +45,8 @@ const BlogPost = () => {
             asset->{url}
           },
           content,
-          keywords
+          keywords,
+          meta_title
         }`;
         const fetchedPost: BlogPostData = await client.fetch(query, { slug });
         setPost(fetchedPost);
@@ -94,16 +95,42 @@ const BlogPost = () => {
     types: {
       table: ({ node }) => (
         <table className="table-auto w-full border-collapse border border-gray-300 text-foreground">
-          <tbody>
-            {node.rows.map((row, rowIndex) => (
-              <tr key={rowIndex} className="border-b">
-                {row.cells.map((cell, cellIndex) => (
-                  <td key={cellIndex} className="border p-2">
+          <thead>
+            <tr className="border-b">
+              {node.rows && Array.isArray(node.rows[0].cells) && (
+                node.rows[0].cells.map((cell, cellIndex) => (
+                  <th key={cellIndex} className="border p-2 font-bold">
                     {cell}
-                  </td>
-                ))}
+                  </th>
+                ))
+              )}
+            </tr>
+          </thead>
+          <tbody>
+            {node.rows && Array.isArray(node.rows) ? (
+              node.rows.map((row, rowIndex) => (
+                rowIndex === 0 ? null : ( // Skip the header row
+                  <tr key={rowIndex} className="border-b">
+                    {row.cells && Array.isArray(row.cells) ? (
+                      row.cells.map((cell, cellIndex) => (
+                        <td
+                          key={cellIndex}
+                          className={`border p-2 ${cellIndex === 0 ? 'font-bold' : ''}`}
+                        >
+                          {cell}
+                        </td>
+                      ))
+                    ) : (
+                      <td className="border p-2">No cells data</td>
+                    )}
+                  </tr>
+                )
+              ))
+            ) : (
+              <tr>
+                <td className="border p-2">No rows data</td>
               </tr>
-            ))}
+            )}
           </tbody>
         </table>
       ),
