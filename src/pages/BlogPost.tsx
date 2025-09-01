@@ -51,6 +51,7 @@ const BlogPost = () => {
         const fetchedPost: BlogPostData = await client.fetch(query, { slug });
         setPost(fetchedPost);
         setLoading(false);
+        
       } catch (error) {
         console.error("Error fetching post:", error);
         setLoading(false);
