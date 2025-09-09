@@ -149,8 +149,8 @@ const BlogPost = () => {
         <meta property="og:description" content={post.excerpt} />
         <meta property="og:image" content={post.image.asset.url} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://groupdealz.in/blog/${post.slug.current}`} />
-        <link rel="canonical" href={`https://groupdealz.in/blog/${post.slug.current}`} />
+        <meta property="og:url" content={`https://www.groupdealz.in/blog/${post.slug.current}`} />
+        <link rel="canonical" href={`https://www.groupdealz.in/blog/${post.slug.current}`} />
       </Helmet>
 
       <Navbar />
