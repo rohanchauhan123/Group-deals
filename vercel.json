@@ -1,5 +1,20 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/blog/:slug",
+      "destination": "https://service.prerender.io/blog/:slug"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/blog/:slug",
+      "headers": [
+        { "key": "X-Prerender-Token", "value": "CL9qxdFMjwTK8IXeCAod" }
+      ]
+    }
   ]
 }
