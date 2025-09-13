@@ -9,7 +9,7 @@
   "headers": [
     {
       "source": "/blog/:slug",
-      "headers": [
+      "headers": [  
         { "key": "X-Prerender-Token", "value": "CL9qxdFMjwTK8IXeCAod" }
       ]
     }
