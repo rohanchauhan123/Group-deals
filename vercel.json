@@ -1,9 +1,6 @@
 {
-  "rewrites": [
-    {
-      "source": "/blog/:slug",
-      "destination": "https://service.prerender.io/blog/:slug"
-    },
+"  rewrites": [
+   
     {
       "source": "/(.*)",
       "destination": "/index.html"
