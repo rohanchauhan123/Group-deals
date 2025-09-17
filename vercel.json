@@ -1,17 +1,5 @@
 {
-"  rewrites": [
-   
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/blog/:slug",
-      "headers": [  
-        { "key": "X-Prerender-Token", "value": "CL9qxdFMjwTK8IXeCAod" }
-      ]
-    }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
