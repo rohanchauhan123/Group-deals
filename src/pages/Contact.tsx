@@ -201,7 +201,7 @@ const Contact = () => {
               
               <Card className="p-8 shadow-xl border-0 bg-white">
                 <form
-                  action="https://formsubmit.co/info@groupdealz.in"
+                  action="https://formsubmit.co/0e67360a3f8da5d20f6c0424056b22ee"
                   method="POST"
                   className="space-y-6"
                 >
