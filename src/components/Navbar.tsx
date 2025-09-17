@@ -1,5 +1,8 @@
 import { useState } from "react";
-import { Menu, X, TrendingUp, User, Mail, Phone, DollarSign, Building } from "lucide-react";
+import { Menu, X, TrendingUp, User, Mail, Phone, DollarSign,IndianRupee, Building } from "lucide-react";
+
+
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -192,100 +195,103 @@ const Navbar = () => {
             </div>
 
             {/* Form */}
-            <div className="p-6 pt-0 space-y-4">
-              {/* Name Field */}
-              <div className="relative">
-                <User className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Full Name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full pl-11 pr-4 py-3 border border-border rounded-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
-                />
-              </div>
+            {/* Form */}
+<div className="p-6 pt-0 space-y-4">
+  <form
+    action="https://formsubmit.co/0e67360a3f8da5d20f6c0424056b22ee"
+    method="POST"
+    className="space-y-4"
+  >
+    {/* hidden fields */}
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="_subject" value="New Investment Lead" />
+    <input type="hidden" name="_next" value="https://www.groupdealz.in/" />
 
-              {/* Email Field */}
-              <div className="relative">
-                <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email Address"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full pl-11 pr-4 py-3 border border-border rounded-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
-                />
-              </div>
+    {/* Name Field */}
+    <div className="relative">
+      <User className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+      <input
+        type="text"
+        name="name"
+        placeholder="Full Name"
+        required
+        className="w-full pl-11 pr-4 py-3 border border-border rounded-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
+      />
+    </div>
 
-              {/* Phone Field */}
-              <div className="relative">
-                <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder="Phone Number"
-                  value={formData.phone}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full pl-11 pr-4 py-3 border border-border rounded-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
-                />
-              </div>
+    {/* Email Field */}
+    <div className="relative">
+      <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+      <input
+        type="email"
+        name="email"
+        placeholder="Email Address"
+        required
+        className="w-full pl-11 pr-4 py-3 border border-border rounded-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
+      />
+    </div>
 
-              {/* Investment Amount Field */}
-              <div className="relative">
-                <DollarSign className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-                <select
-                  name="investmentAmount"
-                  value={formData.investmentAmount}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full pl-11 pr-4 py-3 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 appearance-none cursor-pointer"
-                >
-                  <option value="">Select Investment Amount</option>
-                  <option value="10-15-lakhs">₹10-15 Lakhs</option>
-                  <option value="15-20-lakhs">₹15-20 Lakhs</option>
-                  <option value="20-plus-lakhs">₹20+ Lakhs</option>
-                </select>
-              </div>
+    {/* Phone Field */}
+    <div className="relative">
+      <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+      <input
+        type="tel"
+        name="phone"
+        placeholder="Phone Number"
+        required
+        className="w-full pl-11 pr-4 py-3 border border-border rounded-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
+      />
+    </div>
 
-              {/* Property Type Field */}
-              <div className="relative">
-                <Building className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-                <select
-                  name="propertyType"
-                  value={formData.propertyType}
-                  onChange={handleInputChange}
-                  className="w-full pl-11 pr-4 py-3 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 appearance-none cursor-pointer"
-                >
-                  <option value="residential">Residential Properties</option>
-                  <option value="commercial">Commercial Properties</option>
-                  <option value="mixed">Mixed Portfolio</option>
-                  <option value="industrial">Industrial Properties</option>
-                </select>
-              </div>
+    {/* Investment Amount Field */}
+    <div className="relative">
+      <IndianRupee className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+      <select
+        name="investmentAmount"
+        required
+        className="w-full pl-11 pr-4 py-3 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 appearance-none cursor-pointer"
+      >
+        <option value="">Select Investment Amount</option>
+        <option value="10-15-lakhs">₹10-15 Lakhs</option>
+        <option value="15-20-lakhs">₹15-20 Lakhs</option>
+        <option value="20-plus-lakhs">₹20+ Lakhs</option>
+      </select>
+    </div>
 
-              {/* Submit Button */}
-              <button
-                onClick={handleSubmit}
-                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-3 rounded-lg transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg group relative overflow-hidden mt-6"
-              >
-                <span className="relative z-10 flex items-center justify-center space-x-2">
-                  <TrendingUp className="h-5 w-5" />
-                  <span>Get Started</span>
-                </span>
-                <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </button>
+    {/* Property Type Field */}
+    <div className="relative">
+      <Building className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+      <select
+        name="propertyType"
+        className="w-full pl-11 pr-4 py-3 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 appearance-none cursor-pointer"
+      >
+        <option value="residential">Residential Properties</option>
+        <option value="commercial">Commercial Properties</option>
+        <option value="mixed">Mixed Portfolio</option>
+        <option value="industrial">Industrial Properties</option>
+      </select>
+    </div>
 
-              {/* Disclaimer */}
-              <p className="text-xs text-muted-foreground text-center mt-4 leading-relaxed">
-                By submitting this form, you agree to our Terms of Service and Privacy Policy. 
-                We'll contact you within 24 hours to discuss your investment opportunities.
-              </p>
-            </div>
+    {/* Submit Button */}
+    <button
+      type="submit"
+      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-3 rounded-lg transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg group relative overflow-hidden mt-6"
+    >
+      <span className="relative z-10 flex items-center justify-center space-x-2">
+        <TrendingUp className="h-5 w-5" />
+        <span>Get Started</span>
+      </span>
+      <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    </button>
+
+    {/* Disclaimer */}
+    <p className="text-xs text-muted-foreground text-center mt-4 leading-relaxed">
+      By submitting this form, you agree to our Terms of Service and Privacy Policy. 
+      We'll contact you within 24 hours to discuss your investment opportunities.
+    </p>
+  </form>
+</div>
+
           </div>
         </div>
       )}
