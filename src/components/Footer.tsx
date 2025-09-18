@@ -83,7 +83,7 @@ const Footer = () => {
               <div>
                 <p className="text-white/75 mb-1">Address:</p>
                 <a 
-                  href="https://maps.google.com/?q=Ist+Floor,+Plus+Office,+Landmark+Cyber+Park,+Ramgarh,+Sector+67,+Gurugram,+Haryana+122018"
+                  href="https://maps.app.goo.gl/yGXpoBKGFpfrByNk8"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/75 hover:text-primary transition-colors flex items-start gap-2"
