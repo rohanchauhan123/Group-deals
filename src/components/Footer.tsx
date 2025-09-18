@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -61,16 +61,36 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-6">Contact</h3>
             <div className="space-y-4">
               <div>
-                <p className="text-white/75">Email:</p>
-                <p className="text-primary">info@groupdealz.com</p>
+                <p className="text-white/75 mb-1">Email:</p>
+                <a 
+                  href="mailto:info@groupdealz.com" 
+                  className="text-primary hover:text-white transition-colors flex items-center gap-2"
+                >
+                  <Mail className="h-4 w-4" />
+                  info@groupdealz.com
+                </a>
               </div>
               <div>
-                <p className="text-white/75">Phone:</p>
-                <p className="text-primary">+91 9211652088</p>
+                <p className="text-white/75 mb-1">Phone:</p>
+                <a 
+                  href="tel:+919211652088" 
+                  className="text-primary hover:text-white transition-colors flex items-center gap-2"
+                >
+                  <Phone className="h-4 w-4" />
+                  +91 9211652088
+                </a>
               </div>
               <div>
-                <p className="text-white/75">Address:</p>
-                <p className="text-white/75">Ist Floor, Plus Office, Landmark Cyber Park, Ramgarh, Sector 67, Gurugram, Haryana 122018</p>
+                <p className="text-white/75 mb-1">Address:</p>
+                <a 
+                  href="https://maps.google.com/?q=Ist+Floor,+Plus+Office,+Landmark+Cyber+Park,+Ramgarh,+Sector+67,+Gurugram,+Haryana+122018"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/75 hover:text-primary transition-colors flex items-start gap-2"
+                >
+                  <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                  <span>Ist Floor, Plus Office, Landmark Cyber Park, Ramgarh, Sector 67, Gurugram, Haryana 122018</span>
+                </a>
               </div>
             </div>
           </div>
