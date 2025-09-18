@@ -198,43 +198,46 @@ const Blog = () => {
           {regularPosts.length > 0 ? (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {regularPosts.map((post) => (
-                <Card
+                <Link 
                   key={post._id}
-                  className="overflow-hidden hover-lift group cursor-pointer"
+                  to={`/blog/${post.slug.current}`}
+                  className="block no-underline"
                 >
-                  <div className="aspect-video overflow-hidden">
-                    <img
-                      src={post.image.asset.url}
-                      alt={post.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <CardHeader className="pb-2">
-                    <Badge variant="outline" className="w-fit mb-2">{post.category}</Badge>
-                    <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
-                      <Link to={`/blog/${post.slug.current}`}>{post.title}</Link>
-                    </h3>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground mb-4 line-clamp-3">
-                      {post.excerpt}
-                    </p>
-
-                    <div className="flex items-center justify-between text-sm text-muted-foreground">
-                      <div className="flex items-center space-x-3">
-                        <div className="flex items-center">
-                          <User className="h-3 w-3 mr-1" />
-                          {post.author}
-                        </div>
-                        <div className="flex items-center">
-                          <Clock className="h-3 w-3 mr-1" />
-                          {post.readTime}
-                        </div>
-                      </div>
-                      <span className="text-xs">{post.date}</span>
+                  <Card className="overflow-hidden hover-lift group cursor-pointer h-full">
+                    <div className="aspect-video overflow-hidden">
+                      <img
+                        src={post.image.asset.url}
+                        alt={post.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
                     </div>
-                  </CardContent>
-                </Card>
+                    <CardHeader className="pb-2">
+                      <Badge variant="outline" className="w-fit mb-2">{post.category}</Badge>
+                      <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
+                        {post.title}
+                      </h3>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground mb-4 line-clamp-3">
+                        {post.excerpt}
+                      </p>
+
+                      <div className="flex items-center justify-between text-sm text-muted-foreground">
+                        <div className="flex items-center space-x-3">
+                          <div className="flex items-center">
+                            <User className="h-3 w-3 mr-1" />
+                            {post.author}
+                          </div>
+                          <div className="flex items-center">
+                            <Clock className="h-3 w-3 mr-1" />
+                            {post.readTime}
+                          </div>
+                        </div>
+                        <span className="text-xs">{post.date}</span>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </Link>
               ))}
             </div>
           ) : (

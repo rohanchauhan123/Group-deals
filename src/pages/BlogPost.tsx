@@ -28,6 +28,7 @@ const BlogPost = () => {
   const { slug } = useParams<{ slug?: string }>();
   const [post, setPost] = useState<BlogPostData | null>(null);
   const [loading, setLoading] = useState(true);
+  const [showShareDialog, setShowShareDialog] = useState(false);
 
   useEffect(() => {
     const fetchPost = async () => {
@@ -61,6 +62,31 @@ const BlogPost = () => {
       fetchPost();
     }
   }, [slug]);
+
+  const handleShare = async () => {
+    const shareUrl = `https://www.groupdealz.in/blog/${post?.slug.current}`;
+    const shareTitle = post?.title;
+
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: shareTitle,
+          text: post?.excerpt,
+          url: shareUrl,
+        });
+      } catch (error) {
+        console.log('Error sharing:', error);
+      }
+    } else {
+      // Fallback: Copy to clipboard
+      try {
+        await navigator.clipboard.writeText(shareUrl);
+        alert('Link copied to clipboard!');
+      } catch (error) {
+        console.log('Error copying to clipboard:', error);
+      }
+    }
+  };
 
   if (loading) {
     return (
@@ -186,7 +212,7 @@ const BlogPost = () => {
               </span>
             </div>
 
-            <Button variant="outline" size="sm">
+            <Button variant="outline" size="sm" onClick={handleShare}>
               <Share2 className="h-4 w-4 mr-2" /> Share
             </Button>
           </div>
@@ -219,6 +245,14 @@ const BlogPost = () => {
             }
             .article-content h2 { font-size: 1.45rem; margin-top: 1.25rem; margin-bottom: 0.5rem; font-weight:700; }
             .article-content h3 { font-size: 1.15rem; margin-top: 1rem; margin-bottom: 0.45rem; font-weight:600; }
+            .article-content a { 
+              color: #2563eb; /* Tailwind blue-600 */
+              text-decoration: none;
+            }
+            .article-content a:hover { 
+              color: #1d4ed8; /* Tailwind blue-800 */
+              text-decoration: underline;
+            }
             @media (min-width: 768px) {
               .article-content p:first-of-type::first-letter { font-size: 4rem; }
             }
@@ -244,9 +278,7 @@ const BlogPost = () => {
           <p className="text-lg text-muted-foreground mb-6">
             Join thousands of investors who are building wealth through fractional real estate ownership.
           </p>
-          <Button size="lg" className="btn-gold rounded-xl px-8 py-3">
-            Start Investing Today
-          </Button>
+        
         </div>
       </section>
 

@@ -48,7 +48,7 @@ const Hero = () => {
             
             <div className="fade-up flex flex-col sm:flex-row gap-4 mb-12" style={{animationDelay: '0.6s'}}>
              
-            <Link to="/about">
+            <Link to="/how-it-works">
   <Button
     variant="outline"
     className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
