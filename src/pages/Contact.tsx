@@ -303,7 +303,7 @@ const Contact = () => {
                     <MapPin className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-2">GroupDealz Office|ARS Enterprises</h3>
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">GroupDealz Office | ARS Enterprises</h3>
                     <p className="text-slate-600 leading-relaxed">
                       Ist Floor, Plus Office<br />
                       Landmark Cyber Park, Ramgarh<br />
