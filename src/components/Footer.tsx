@@ -99,7 +99,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="border-t border-white/20 mt-12 pt-8 text-center">
           <p className="text-white/75">
-            © 2025 GroupDealz. All rights reserved. 
+            © 2025 ARS Enterprises. All rights reserved. 
           </p>
           {/* <p className="text-white/50 text-sm mt-2">
             Real estate investments involve risk including loss of principal. Past performance does not guarantee future results.
