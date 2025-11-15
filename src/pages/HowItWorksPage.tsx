@@ -85,8 +85,8 @@ const HowItWorksPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
  <Helmet>
-  <title>GroupDealz | Real Estate Investment Guide for Beginners</title>
-  <meta name="title" content="GroupDealz | Real Estate Investment Guide for Beginners" />
+  <title>Groupdealz Real Estate - Fractional Property Investment in Gurgaon</title>
+  <meta name="title" content="Groupdealz Real Estate - Fractional Property Investment in Gurgaon" />
   <meta
     name="description"
     content="Learn how fractional real estate investing works in Gurgaon. Start with ₹10L, earn rental income from Day 1, and enjoy high ROI with flexible exit options."
@@ -94,13 +94,13 @@ const HowItWorksPage = () => {
   <meta name="keywords" content="Invest smart in real estate in Gurgaon with GroupDealz. Co-own RERA-registered properties from ₹10L. Earn rental income & get flexible exit options." />
   <link rel="canonical" href="https://www.groupdealz.in/how-it-works" />
 
-  <meta name="DC.Title" content="GroupDealz | Real Estate Investment Guide for Beginners" />
+  <meta name="DC.Title" content="Groupdealz Real Estate - Fractional Property Investment in Gurgaon" />
   <meta
     name="DC.Subject"
     content="Learn how fractional real estate investing works in Gurgaon. Start with ₹10L, earn rental income from Day 1, and enjoy high ROI with flexible exit options."
   />
 
-  <meta property="og:title" content="GroupDealz | Real Estate Investment Guide for Beginners" />
+  <meta property="og:title" content="Groupdealz Real Estate - Fractional Property Investment in Gurgaon" />
   <meta
     property="og:description"
     content="Learn how fractional real estate investing works in Gurgaon. Start with ₹10L, earn rental income from Day 1, and enjoy high ROI with flexible exit options."
