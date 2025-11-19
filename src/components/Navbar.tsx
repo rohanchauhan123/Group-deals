@@ -22,7 +22,7 @@ const Navbar = () => {
     { href: "/about", label: "About" },
     { href: "/careers", label: "Careers" },
     { href: "/blog", label: "Blog" },
-    { href: "/contact", label: "Contact" },
+    { href: "/contact", label: "Contact Us" },
   ];
 
   const handleInputChange = (e) => {
