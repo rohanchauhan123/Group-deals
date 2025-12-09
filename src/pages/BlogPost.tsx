@@ -220,16 +220,31 @@ const BlogPost = () => {
       </section>
 
       {/* Featured Image */}
-      <section className="pb-12">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <img
-            src={post.image.asset.url}
-            alt={post.title}
-            className="w-full h-64 md:h-96 rounded-2xl shadow-lg"
-          />
-        </div>
-      </section>
+{/* Featured Image */}
+<section className="pb-12">
+  <div className="container mx-auto px-4 max-w-4xl">
+    <div className="relative overflow-hidden rounded-3xl border border-border/60 bg-gradient-to-br from-muted/40 via-background to-muted/60 shadow-xl">
+      <img
+        src={post.image.asset.url}
+        alt={post.title}
+        className="
+          w-full
+          h-auto
+          max-h-[520px]
+          object-contain
+          mx-auto
+          transition-transform
+          duration-500
+          ease-out
+          hover:scale-[1.02]
+        "
+      />
 
+      {/* subtle gradient overlay at bottom for text if needed later */}
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-background/70 to-transparent" />
+    </div>
+  </div>
+</section>
       {/* Article Content */}
       <section className="pb-16">
         <div className="container mx-auto px-4 max-w-4xl">
