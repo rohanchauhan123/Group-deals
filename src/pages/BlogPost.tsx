@@ -225,7 +225,7 @@ const BlogPost = () => {
           <img
             src={post.image.asset.url}
             alt={post.title}
-            className="w-full h-64 md:h-96 object-cover rounded-2xl shadow-lg"
+            className="w-full h-64 md:h-96 rounded-2xl shadow-lg"
           />
         </div>
       </section>
