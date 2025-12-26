@@ -9,6 +9,7 @@ import Benefits from "@/components/Benefits";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import LeadershipTeam from "@/components/LeadershipTeam";
 
 const Index = () => {
   useEffect(() => {
@@ -76,6 +77,7 @@ const Index = () => {
         <PropertyShowcase />
         <Testimonials />
         <Benefits />
+          <LeadershipTeam />
         <CTA />
         <Footer />
         <WhatsAppButton />

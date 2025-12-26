@@ -1,0 +1,171 @@
+/* ================= TEAM SECTION ================= */
+.team-section {
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.team-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.team-subtitle {
+  color: #666;
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.team-card {
+  background: #fff;
+  border-radius: 22px;
+  padding: 22px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+}
+
+/* IMAGE (CARD) */
+.team-img {
+  width: 100%;
+  height: 320px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 18px;
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: unset;   /* 🔥 BLANK FIX */
+}
+
+/* ================= MODAL ================= */
+.team-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.team-modal {
+  background: #fff;
+  border-radius: 24px;
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  display: grid;
+  grid-template-columns: 42% 58%;
+  overflow: hidden;
+  position: relative;
+  animation: scaleUp 0.3s ease;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.92);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* CLOSE */
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background: rgba(0, 0, 0, 0.08);
+  border: none;
+  font-size: 22px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* IMAGE (MODAL) */
+.modal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: unset;     /* 🔥 NO CUT, NO BLANK FEEL */
+  background: #f4f4f4;
+}
+
+/* CONTENT */
+.team-modal-content {
+  padding: 40px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.team-modal-content h3 {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.team-modal-content h5 {
+  font-size: 15px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.team-modal-content p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 14px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .team-modal {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-img {
+    height: 300px;
+  }
+
+  .team-modal-content {
+    padding: 26px;
+  }
+}
+
+@media (max-width: 600px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-img {
+    height: 280px;
+  }
+}
