@@ -4,6 +4,7 @@ import { Building, MapPin, Briefcase, Clock, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Footer from "@/components/Footer";
+import JoinOurTeam from "@/components/JoinOurTeam";
 
 const Careers = () => {
   useEffect(() => {
@@ -334,7 +335,10 @@ Regards,`;
           </div>
         </div>
       )}
+      {/* 🔥 JOIN OUR TEAM IMAGE SECTION */}
+      <JoinOurTeam />
 
+    
       <Footer />
     </div>
   );

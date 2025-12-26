@@ -10,6 +10,7 @@ import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import LeadershipTeam from "@/components/LeadershipTeam";
+import JoinOurTeam from "@/components/JoinOurTeam";
 
 const Index = () => {
   useEffect(() => {
@@ -78,6 +79,7 @@ const Index = () => {
         <Testimonials />
         <Benefits />
           <LeadershipTeam />
+          <JoinOurTeam/>
         <CTA />
         <Footer />
         <WhatsAppButton />

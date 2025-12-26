@@ -1,18 +1,57 @@
 import { MapPin, TrendingUp, HandCoins, Users, Clock, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import property1 from "@/assets/building1.jpeg";
-import property2 from "@/assets/building2.jpeg";
-import property3 from "@/assets/building3.jpeg";
-import property4 from "@/assets/i4.jpeg";
-import property5 from "@/assets/i5.jpeg";
-import property6 from "@/assets/i6.jpeg";
-import property7 from "@/assets/i7.jpeg";
+/* ===== IMAGES (UNIQUE NAMES) ===== */
+import img1 from "@/assets/building1.jpeg";
+import img2 from "@/assets/building2.jpeg";
+import img3 from "@/assets/building3.jpeg";
+import img4 from "@/assets/i4.jpeg";
+import img5 from "@/assets/i5.jpeg";
+import img6 from "@/assets/i6.jpeg";
+import img7 from "@/assets/i7.jpeg";
+
+import img8 from "@/assets/a1.jpg";
+import img9 from "@/assets/a2.jpg";
+import img10 from "@/assets/a3.jpg";
+import img11 from "@/assets/a4.jpg";
+import img12 from "@/assets/a5.jpg";
+import img13 from "@/assets/a6.jpg";
+import img14 from "@/assets/a7.jpg";
+import img15 from "@/assets/a8.jpg";
+import img16 from "@/assets/a9.jpg";
+import img17 from "@/assets/a10.jpg";
+import img18 from "@/assets/a11.jpg";
+import img19 from "@/assets/a12.jpg";
+import img20 from "@/assets/a14.jpg";
+import img21 from "@/assets/a15.jpg";
+import img22 from "@/assets/16.jpg";
+import img23 from "@/assets/17.jpg";
+import img24 from "@/assets/18.jpg";
+import img25 from "@/assets/19.jpg";
+import img26 from "@/assets/20.jpg";
+import img27 from "@/assets/21.jpg";
+import img28 from "@/assets/22.jpg";
+import img29 from "@/assets/23.jpg";
+import img30 from "@/assets/24.jpg";
+import img31 from "@/assets/25.jpg";
+import img32 from "@/assets/27.jpg";
+import img33 from "@/assets/28.jpg";
+
+
+
+
+
+
 import { useState, useEffect } from "react";
 
 const PropertyShowcase = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
-  const propertyImages = [property1, property2, property3, property4, property5, property6, property7];
+  const propertyImages = [ img1, img2, img3, img4, img5, img6, img7,
+  img8, img9, img10, img11, img12, img13,
+  img14, img15, img16, img17, img18, img19,
+  img20, img21, img22, img23, img24, img25,
+  img26, img27, img28, img29, img30, img31,
+  img32, img33,];
   
   const property = {
     id: 1,

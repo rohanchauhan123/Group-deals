@@ -1,0 +1,19 @@
+/* Image-only modal */
+.image-only-modal {
+  grid-template-columns: 1fr;
+  max-width: 600px;
+}
+
+.image-only-modal .modal-img {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+  background: #f4f4f4;
+}
+
+.team-section {
+    padding: 80px 20px;
+    background: #f5f1e5;
+    text-align: center;
+}
