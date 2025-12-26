@@ -51,6 +51,30 @@ Her advisory approach supports both first-time investors and experienced profess
 
 At GroupDealz, she is known for her commitment to ethical practices, transparent communication, and investor education. She believes that informed investors make better decisions, and she ensures complete clarity across the entire investment lifecycle, from entry to exit. Through trust, knowledge, and consistent support, she continues to add value to investors seeking reliable and well-structured real estate investment opportunities.`,
   },
+   {
+    name: "Mandakni Shrivastav",
+    role: "General Manager",
+    image: "/images/mina.jpg",
+    description: `Mandakni Shrivastav is an experienced professional with over 11 years of focused exposure in
+the fractional ownership sector, primarily across operations and asset management functions.
+Over the years, she has worked across diverse real estate portfolios and has developed strong
+capabilities in process design, execution oversight, and investor servicing. Her experience
+spans coordinating day-to-day operations, supporting transaction processes, and ensuring
+alignment between business goals and operational delivery across multiple projects.
+In her current role, Mandakni is responsible for overseeing core operational activities and
+ensuring that systems and processes function in an efficient and coordinated manner. She plays
+an active role in planning, monitoring, and improving workflows, with emphasis on compliance,
+documentation accuracy, and service standards. By working closely with leadership teams,
+partner networks, and internal departments, she helps maintain structured operations that
+support stability and organised growth of the business.
+Mandakni is known for her disciplined working style, attention to detail, and dependable
+execution capabilities. She maintains a strong focus on transparency and consistency in
+processes, contributing to enhanced stakeholder confidence and operational reliability. Her
+ability to manage teams, streamline procedures, and support investor interaction adds
+meaningful value to the organisation. With a steady and responsible approach, she continues to
+strengthen back-end systems and operational frameworks that enable the company’s long-term
+objectives.`,
+  },
 ];
 
 const LeadershipTeam: React.FC = () => {
@@ -63,7 +87,7 @@ const LeadershipTeam: React.FC = () => {
         <div className="container">
           <h2 className="team-title">Our Leadership Team</h2>
           <p className="team-subtitle">
-            Meet the experts behind our financial solutions
+           Meet the experts behind our real estate growth
           </p>
 
           <div className="team-grid">

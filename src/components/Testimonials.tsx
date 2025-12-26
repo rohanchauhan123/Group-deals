@@ -11,6 +11,18 @@ const testimonials = [
 		id: 2,
 		image: '/2.jpeg',
 	},
+	{
+		id: 2,
+		image: '/Post_5.jpg',
+	},
+	{
+		id: 2,
+		image: '/Post_6.jpg',
+	},
+	{
+		id: 2,
+		image: '/Post_7.jpg',
+	},
 ];
 
 // Duplicate testimonials for infinite scroll effect
