@@ -41,7 +41,7 @@ Known for his integrity and transparent working style, Mr Amitabh Chaudhuri has 
   },
   {
     name: "Bhawna Kanoria",
-    role: "Senior Business Development Executive – GroupDealz",
+    role: "Senior Business Development",
     image: "/images/image1.jpg",
     description: `With more than 16 years of hands-on experience in the real estate industry, Ms Bhawna Kanoria is a trusted name for investors looking to explore structured and secure property investments. At GroupDealz, she plays an important role in introducing and educating investors about fractional ownership as a practical, transparent, and scalable way to invest in high-value real estate assets without the burden of full ownership.
 
