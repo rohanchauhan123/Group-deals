@@ -12,7 +12,7 @@ const teamData: TeamMember[] = [
   {
     name: "Ashwini Shrivastav",
     role: "Vice President Marketing",
-    image: "/images/ashwini.png",
+    image: "/images/image3.jpg",
     description: `Mr Ashwini Shrivastav is an accomplished marketing professional with more than 15 years of
 experience in building strong brands and driving strategic growth. As Vice President of Marketing,
 he leads the organisation’s marketing vision with a clear focus on brand positioning, investor
@@ -32,7 +32,7 @@ relevant, credible, and visible in a competitive investment landscape.`,
   {
     name: "Mr Amitabh Chaudhuri",
     role: "Director",
-    image: "/images/Amitabh.png",
+    image: "/images/imag2.jpg",
     description: `Mr Amitabh Chaudhuri is a highly experienced real estate professional with over 27 years of deep industry exposure. His career spans residential, commercial, and investment-focused real estate, with strong expertise in fractional ownership models and structured asset-led investments. Over the years, he has played a key role in conceptualising, developing, and scaling multiple real estate ventures, bringing stability and long-term value to every project he leads.
 
 As a strategic and forward-looking leader, Mr Amitabh Chaudhuri currently manages two independent business verticals with a clear focus on sustainable growth, operational efficiency, and investor confidence. His leadership approach combines strong market understanding with practical execution, ensuring that every business decision is backed by insight, discipline, and long-term vision.
@@ -42,7 +42,7 @@ Known for his integrity and transparent working style, Mr Amitabh Chaudhuri has 
   {
     name: "Bhawna Kanoria",
     role: "Senior Business Development Executive – GroupDealz",
-    image: "/images/Bhawna.png",
+    image: "/images/image1.jpg",
     description: `With more than 16 years of hands-on experience in the real estate industry, Ms Bhawna Kanoria is a trusted name for investors looking to explore structured and secure property investments. At GroupDealz, she plays an important role in introducing and educating investors about fractional ownership as a practical, transparent, and scalable way to invest in high-value real estate assets without the burden of full ownership.
 
 She is deeply involved in guiding investors through every stage of the investment process. From understanding how fractional ownership works to selecting the right asset, she ensures investors are clear about legal structuring, due diligence, rental yield potential, expected returns, and exit strategies. Her strength lies in simplifying complex financial and real estate concepts into clear, actionable insights that help investors feel confident and well-informed.
@@ -54,7 +54,7 @@ At GroupDealz, she is known for her commitment to ethical practices, transparent
    {
     name: "Mandakni Shrivastav",
     role: "General Manager",
-    image: "/images/mina.jpg",
+    image: "/images/image4.jpg",
     description: `Mandakni Shrivastav is an experienced professional with over 11 years of focused exposure in
 the fractional ownership sector, primarily across operations and asset management functions.
 Over the years, she has worked across diverse real estate portfolios and has developed strong
