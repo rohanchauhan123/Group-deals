@@ -18,14 +18,14 @@ const Careers = () => {
       id: 1,
       title: "Business Development Manager",
       location: "Gurgaon",
-      experience: "1–3 Years",
+      experience: "2–5 Years",
       jobType: "Full-time",
       salary: "Fixed Salary + Incentives",
       fullDetails: {
         jobTitle: "Business Development Manager",
         company: "Group Dealz",
         location: "Gurgaon",
-        experience: "1–3 Years",
+        experience: "2–5 Years",
         jobType: "Fixed Salary + Incentives",
         workType: "Full-time",
         responsibilities: [
@@ -37,7 +37,7 @@ const Careers = () => {
           "Provide feedback and market insights to the management team for business improvement."
         ],
         requirements: [
-          "Experience: 1 to 3 years in Sales (B2B/B2C or Field Sales preferred).",
+          "Experience: 2 to 5 years in Sales (B2B/B2C or Field Sales preferred).",
           "Own Vehicle: Mandatory (Field sales role).",
           "Excellent communication and negotiation skills.",
           "Strong interpersonal and client relationship management abilities.",
@@ -50,13 +50,13 @@ const Careers = () => {
       id: 2,
       title: "Telecaller",
       location: "Gurgaon, Sector 67",
-      experience: "1 to 5 Years",
+      experience: "2 to 5 Years",
       jobType: "Full-time",
       salary: "As per company standards",
       fullDetails: {
         jobTitle: "Telecaller",
         company: "Group Dealz",
-        experience: "1 to 5 Years",
+        experience: "2 to 5 Years",
         qualification: "Graduate (Any Stream)",
         location: "Gurgaon, Sector 67",
         workingDays: "Monday to Saturday",
@@ -73,7 +73,7 @@ const Careers = () => {
         ],
         requirements: [
           "Graduate in any discipline.",
-          "1–5 years of experience as a Telecaller, Customer Care Executive, or similar role.",
+          "2–5 years of experience as a Telecaller, Customer Care Executive, or similar role.",
           "Strong verbal communication and interpersonal skills.",
           "Proficiency in MS Excel and data maintenance.",
           "Good time management and attention to detail.",
