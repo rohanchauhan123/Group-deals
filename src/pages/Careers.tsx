@@ -49,7 +49,7 @@ const Careers = () => {
     {
       id: 2,
       title: "Tele Sales Manager",
-      location: "Gurgaon, Sector 67",
+      location: "Gurgaon",
       experience: "2 to 5 Years",
       jobType: "Full-time",
       salary: "As per company standards",
@@ -58,7 +58,7 @@ const Careers = () => {
         company: "Group Dealz",
         experience: "2 to 5 Years",
         qualification: "Graduate (Any Stream)",
-        location: "Gurgaon, Sector 67",
+        location: "Gurgaon",
         workingDays: "Monday to Saturday",
         workingHours: "10:00 AM to 6:30 PM",
         jobSummary: "We are looking for a motivated and detail-oriented Tele Sales Manager to join our team at Group Dealz. The role involves handling outbound and inbound calls, maintaining client records, and updating Excel sheets accurately. The ideal candidate should have excellent communication skills, a positive attitude, and proficiency in MS Excel.",
@@ -140,10 +140,10 @@ const Careers = () => {
 
             <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
               {[
-                { icon: Building, title: "Innovative Culture", desc: "Work on cutting-edge solutions in fintech and real estate" },
-                { icon: Briefcase, title: "Growth Opportunities", desc: "Continuous learning and career advancement" },
-                { icon: MapPin, title: "Prime Location", desc: "Based in Gurgaon with modern workspace" },
-                { icon: Clock, title: "Work-Life Balance", desc: "Flexible working hours and remote options" }
+                { icon: Building, title: "Innovative Culture", desc: "Be part of a progressive and dynamic workplace where creativity, collaboration, and innovative thinking are genuinely valued. Our teams work closely on impactful real estate projects, encouraging fresh ideas and smart problem-solving. We promote open communication, teamwork, and continuous improvement, creating an environment where employees feel empowered to contribute, experiment, and grow professionally while delivering meaningful results." },
+                { icon: Briefcase, title: "Growth Opportunities", desc: "We are committed to long-term professional growth and career advancement. Employees receive support through regular training programs, mentorship, skill development initiatives, and performance-based growth plans. Clear career paths help individuals enhance their capabilities, gain new responsibilities, and build a stable, rewarding career within a supportive and growth-oriented work environment." },
+                { icon: MapPin, title: "Prime Location", desc: "Our modern office is strategically located in Gurgaon, offering excellent connectivity to major business hubs and commercial areas. The workspace is designed for comfort, efficiency, and professionalism, providing a productive environment. Easy accessibility, nearby amenities, and a well-planned office setup help ensure a smooth and convenient daily work experience for employees." },
+                { icon: Clock, title: "Work-Life Balance", desc: "We strongly believe in maintaining a healthy work–life balance for our employees. Flexible work policies, supportive leadership, and a respectful workplace culture allow individuals to manage professional and personal responsibilities effectively. By promoting well-being, reducing stress, and encouraging balance, we help employees stay motivated, productive, and satisfied in the long term." }
               ].map((item, index) => (
                 <Card key={index} className="border-2 border-blue-100 hover:shadow-lg transition-all">
                   <CardHeader>
