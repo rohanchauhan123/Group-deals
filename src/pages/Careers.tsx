@@ -16,13 +16,13 @@ const Careers = () => {
   const jobOpenings = [
     {
       id: 1,
-      title: "Business Development Manager",
+      title: "Sales Manager",
       location: "Gurgaon",
       experience: "2–5 Years",
       jobType: "Full-time",
       salary: "Fixed Salary + Incentives",
       fullDetails: {
-        jobTitle: "Business Development Manager",
+        jobTitle: "Sales Manager",
         company: "Group Dealz",
         location: "Gurgaon",
         experience: "2–5 Years",
@@ -48,20 +48,20 @@ const Careers = () => {
     },
     {
       id: 2,
-      title: "Telecaller",
+      title: "Tele Sales Manager",
       location: "Gurgaon, Sector 67",
       experience: "2 to 5 Years",
       jobType: "Full-time",
       salary: "As per company standards",
       fullDetails: {
-        jobTitle: "Telecaller",
+        jobTitle: "Tele Sales Manager",
         company: "Group Dealz",
         experience: "2 to 5 Years",
         qualification: "Graduate (Any Stream)",
         location: "Gurgaon, Sector 67",
         workingDays: "Monday to Saturday",
         workingHours: "10:00 AM to 6:30 PM",
-        jobSummary: "We are looking for a motivated and detail-oriented Telecaller to join our team at Group Dealz. The role involves handling outbound and inbound calls, maintaining client records, and updating Excel sheets accurately. The ideal candidate should have excellent communication skills, a positive attitude, and proficiency in MS Excel.",
+        jobSummary: "We are looking for a motivated and detail-oriented Tele Sales Manager to join our team at Group Dealz. The role involves handling outbound and inbound calls, maintaining client records, and updating Excel sheets accurately. The ideal candidate should have excellent communication skills, a positive attitude, and proficiency in MS Excel.",
         responsibilities: [
           "Make outbound calls to existing and potential clients to promote company deals and offers.",
           "Handle inbound queries and provide information about products and services.",
@@ -73,7 +73,7 @@ const Careers = () => {
         ],
         requirements: [
           "Graduate in any discipline.",
-          "2–5 years of experience as a Telecaller, Customer Care Executive, or similar role.",
+          "2–5 years of experience as a Tele Sales Manager, Customer Care Executive, or similar role.",
           "Strong verbal communication and interpersonal skills.",
           "Proficiency in MS Excel and data maintenance.",
           "Good time management and attention to detail.",
