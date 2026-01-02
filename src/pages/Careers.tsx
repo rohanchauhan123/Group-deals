@@ -21,6 +21,7 @@ const Careers = () => {
       experience: "2–5 Years",
       jobType: "Full-time",
       pdf: "/job_pdf/pdfs1.pdf",
+       image: "/job_pdf/dgsdfg.png",
       salary: "Fixed Salary + Incentives",
       fullDetails: {
         jobTitle: "Sales Manager",
@@ -55,6 +56,7 @@ const Careers = () => {
       jobType: "Full-time",
       salary: "As per company standards",
       pdf: "/job_pdf/pdfs2.pdf",
+        image: "/job_pdf/dgsdfg.png",
       fullDetails: {
         jobTitle: "Tele Sales Manager",
         company: "Group Dealz",
@@ -201,13 +203,23 @@ const Careers = () => {
                         View Details
                       </Button>
                       <a
-                        href={job.pdf}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block text-center text-sm sm:text-base text-blue-600 hover:underline mt-2"
-                      >
-                        📄 View / Download Job Description (PDF)
-                      </a>
+                      href={job.pdf}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="flex items-center justify-center gap-2 mt-2 text-blue-600 hover:underline"
+                    >
+                      <img
+                        src={job.image}
+                        alt="Job Description PDF"
+                        className="w-10 h-10"
+                        loading="lazy"
+                      />
+                      <span className="text-sm sm:text-base">
+                        View Job Description (PDF)
+                      </span>
+                    </a>
+
                     </div>
                   </CardContent>
                 </Card>
