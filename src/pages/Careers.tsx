@@ -20,6 +20,7 @@ const Careers = () => {
       location: "Gurgaon",
       experience: "2–5 Years",
       jobType: "Full-time",
+      pdf: "/job_pdf/pdfs1.pdf",
       salary: "Fixed Salary + Incentives",
       fullDetails: {
         jobTitle: "Sales Manager",
@@ -53,6 +54,7 @@ const Careers = () => {
       experience: "2 to 5 Years",
       jobType: "Full-time",
       salary: "As per company standards",
+      pdf: "/job_pdf/pdfs2.pdf",
       fullDetails: {
         jobTitle: "Tele Sales Manager",
         company: "Group Dealz",
@@ -198,6 +200,14 @@ const Careers = () => {
                       <Button className="w-full mt-4 text-black hover:opacity-90" style={{ backgroundColor: '#eebd2b' }}>
                         View Details
                       </Button>
+                      <a
+                        href={job.pdf}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block text-center text-sm sm:text-base text-blue-600 hover:underline mt-2"
+                      >
+                        📄 View / Download Job Description (PDF)
+                      </a>
                     </div>
                   </CardContent>
                 </Card>
